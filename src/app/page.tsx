@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white font-sans">
@@ -101,7 +99,7 @@ export default function Home() {
               OldWestSolutions is a premier VMware infrastructure provider, delivering enterprise-grade cloud solutions to businesses worldwide. We specialize in creating robust, scalable, and secure virtual environments that empower organizations to focus on innovation and growth.
             </p>
             <p className="text-gray-300">
-              Our platform enables businesses to develop, test, and deploy applications with confidence, backed by our expert team and cutting-edge infrastructure. Whether you're building AI applications, developing cross-platform solutions, or automating testing processes, our VMware environment provides the perfect foundation for your success.
+              Our platform enables businesses to develop, test, and deploy applications with confidence, backed by our expert team and cutting-edge infrastructure. Whether you&apos;re building AI applications, developing cross-platform solutions, or automating testing processes, our VMware environment provides the perfect foundation for your success.
             </p>
           </div>
           <div className="space-y-6">
