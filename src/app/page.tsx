@@ -8,9 +8,9 @@ export default function Home() {
         <div className="flex items-center">
           <Link href="/" className="text-3xl font-extrabold tracking-tight">OldWestSolutions</Link>
         </div>
-        <button className="bg-ms-gray-70 text-white px-6 py-2 rounded-full font-semibold hover:bg-ms-gray-80 transition-colors">
+        <Link href="/login" className="bg-ms-gray-70 text-white px-6 py-2 rounded-full font-semibold hover:bg-ms-gray-80 transition-colors">
           Login
-        </button>
+        </Link>
       </header>
 
       {/* Hero Section */}
@@ -23,9 +23,12 @@ export default function Home() {
             </p>
             <a
               href="/launch"
-              className="inline-block bg-ms-gray-70 text-white px-8 py-3 rounded-full font-semibold text-lg shadow hover:bg-ms-gray-80 transition-colors"
+              className="inline-flex items-center gap-2 bg-ms-gray-70 text-white px-8 py-3 rounded-full font-semibold text-lg shadow hover:bg-ms-gray-80 transition-colors"
             >
               Launch Now
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8m-4 4h8" />
+              </svg>
             </a>
           </div>
           <div className="bg-[#2a2a2a] p-8 rounded-xl shadow-lg">
