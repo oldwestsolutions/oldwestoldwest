@@ -1,10 +1,12 @@
+import Link from 'next/link';
+
 export default function Launch() {
   return (
     <div className="min-h-screen bg-[#1a1a1a] text-white">
       {/* Header */}
       <header className="w-full flex justify-between items-center py-8 px-8 bg-[#2a2a2a] shadow-md">
         <div className="flex items-center">
-          <a href="/" className="text-3xl font-extrabold tracking-tight">OldWestSolutions</a>
+          <Link href="/" className="text-3xl font-extrabold tracking-tight">OldWestSolutions</Link>
         </div>
         <button className="bg-ms-gray-70 text-white px-6 py-2 rounded-full font-semibold hover:bg-ms-gray-80 transition-colors">
           Login
@@ -206,7 +208,7 @@ export default function Launch() {
                 className="w-4 h-4 text-blue-500 rounded focus:ring-blue-500"
               />
               <label htmlFor="terms" className="text-sm">
-                I agree to the <a href="/terms" className="text-blue-500 hover:underline">Terms of Service</a> and <a href="/privacy" className="text-blue-500 hover:underline">Privacy Policy</a>
+                I agree to the <Link href="/terms" className="text-blue-500 hover:underline">Terms of Service</Link> and <Link href="/privacy" className="text-blue-500 hover:underline">Privacy Policy</Link>
               </label>
             </div>
 
@@ -231,37 +233,37 @@ export default function Launch() {
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="/launch" className="hover:text-white transition-colors">Launch</a></li>
-                <li><a href="/docs" className="hover:text-white transition-colors">Documentation</a></li>
-                <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
+                <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
+                <li><Link href="/launch" className="hover:text-white transition-colors">Launch</Link></li>
+                <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
+                <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
-                <li><a href="/tutorials" className="hover:text-white transition-colors">Tutorials</a></li>
-                <li><a href="/api" className="hover:text-white transition-colors">API Reference</a></li>
-                <li><a href="/status" className="hover:text-white transition-colors">System Status</a></li>
+                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
+                <li><Link href="/tutorials" className="hover:text-white transition-colors">Tutorials</Link></li>
+                <li><Link href="/api" className="hover:text-white transition-colors">API Reference</Link></li>
+                <li><Link href="/status" className="hover:text-white transition-colors">System Status</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
-                <li><a href="/support" className="hover:text-white transition-colors">Help Center</a></li>
-                <li><a href="/community" className="hover:text-white transition-colors">Community</a></li>
+                <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
+                <li><Link href="/support" className="hover:text-white transition-colors">Help Center</Link></li>
+                <li><Link href="/community" className="hover:text-white transition-colors">Community</Link></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
             <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
             <p className="mt-2">
-              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a> | 
-              <a href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</a> | 
-              <a href="/cookies" className="hover:text-white transition-colors ml-2">Cookie Policy</a>
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link> | 
+              <Link href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</Link> | 
+              <Link href="/cookies" className="hover:text-white transition-colors ml-2">Cookie Policy</Link>
             </p>
           </div>
         </div>
