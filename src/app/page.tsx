@@ -20,10 +20,10 @@ export default function Home() {
               Empowering your business with robust, scalable, and secure VMware infrastructure. OldWestSolutions delivers expert virtualization, cloud migration, and IT management tailored for your needs.
             </p>
             <a
-              href="#contact"
+              href="/launch"
               className="inline-block bg-ms-gray-70 text-white px-8 py-3 rounded-full font-semibold text-lg shadow hover:bg-ms-gray-80 transition-colors"
             >
-              Get Started
+              Launch Now
             </a>
           </div>
           <div className="bg-[#2a2a2a] p-8 rounded-xl shadow-lg">
@@ -63,29 +63,86 @@ export default function Home() {
         <div className="flex flex-col items-center text-center">
           <div className="w-16 h-16 rounded-full bg-ms-gray-60 flex items-center justify-center mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold mb-2 text-white">High Performance</h2>
-          <p className="text-gray-300">Enterprise-grade VMware hosting with ultra-fast SSD storage and dedicated resources.</p>
+          <h2 className="text-xl font-bold mb-4 text-white">Virtual Machines</h2>
+          <ul className="text-left space-y-2 text-gray-300">
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>High-performance SSD storage</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Dedicated CPU and RAM resources</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>99.99% uptime guarantee</span>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col items-center text-center">
           <div className="w-16 h-16 rounded-full bg-ms-gray-60 flex items-center justify-center mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold mb-2 text-white">Cloud Ready</h2>
-          <p className="text-gray-300">Seamless cloud migration and hybrid solutions for modern businesses.</p>
+          <h2 className="text-xl font-bold mb-4 text-white">Database as a Service</h2>
+          <ul className="text-left space-y-2 text-gray-300">
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>PostgreSQL & MySQL support</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>MongoDB & Redis integration</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Automated daily backups</span>
+            </li>
+          </ul>
         </div>
         <div className="flex flex-col items-center text-center">
           <div className="w-16 h-16 rounded-full bg-ms-gray-60 flex items-center justify-center mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold mb-2 text-white">Secure & Reliable</h2>
-          <p className="text-gray-300">24/7 monitoring, advanced security, and 99.99% uptime guarantee.</p>
+          <h2 className="text-xl font-bold mb-4 text-white">Framer Templates</h2>
+          <ul className="text-left space-y-2 text-gray-300">
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Modern, responsive designs</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Customizable components</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>Built-in animations</span>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -104,16 +161,16 @@ export default function Home() {
           </div>
           <div className="space-y-6">
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Global Infrastructure</h4>
-              <p className="text-gray-300">Access our VMware platform from anywhere with an internet connection, backed by a global network of data centers.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Web Crawlers</h4>
+              <p className="text-gray-300">Powerful distributed crawlers that efficiently index and extract data from websites while respecting robots.txt and rate limits.</p>
             </div>
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Expert Support</h4>
-              <p className="text-gray-300">Our team of VMware specialists provides 24/7 support and guidance to ensure your success.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Data Scrapers</h4>
+              <p className="text-gray-300">Advanced scraping solutions with built-in proxy rotation, CAPTCHA handling, and automatic retry mechanisms for reliable data extraction.</p>
             </div>
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Innovation Ready</h4>
-              <p className="text-gray-300">Built for modern development needs, from AI and machine learning to cross-platform application development.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">API Wrappers</h4>
+              <p className="text-gray-300">Robust API wrappers that simplify integration with popular services, featuring automatic rate limiting, caching, and error handling.</p>
             </div>
           </div>
         </div>
@@ -126,26 +183,41 @@ export default function Home() {
               <h4 className="text-xl font-bold mb-4 text-white">Development & Testing</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M17.5 4.5l-2.5 2.5 2.5 2.5-1.5 1.5L13.5 8l2.5-2.5-1.5-1.5zM6.5 4.5l2.5 2.5-2.5 2.5 1.5 1.5L10.5 8 8 5.5 6.5 4.5zM12 6l-2 2 2 2 2-2-2-2zm-6 8l2-2 2 2-2 2-2-2zm8 0l-2-2 2-2 2 2-2 2zm-4 4l2-2 2 2-2 2-2-2z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <path d="M6 22L24 8V24L6 10" fill="#0066B8"/>
+                    <path d="M6 10L12 16L6 22" fill="#007ACC"/>
+                    <path d="M12 16L24 8V24L12 16Z" fill="#1F9CF0"/>
                   </svg>
                   <span>Visual Studio & VS Code</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <rect x="4" y="4" width="24" height="24" rx="4" fill="url(#jbGradient)"/>
+                    <path d="M12 12h8v8h-8z" fill="white" fillOpacity="0.2"/>
+                    <defs>
+                      <linearGradient id="jbGradient" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
+                        <stop stopColor="#FCF84A"/>
+                        <stop offset="0.5" stopColor="#A259FF"/>
+                        <stop offset="1" stopColor="#FF6257"/>
+                      </linearGradient>
+                    </defs>
                   </svg>
                   <span>JetBrains IDEs</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <rect x="8" y="16" width="2" height="4" fill="#2496ED"/>
+                    <rect x="12" y="16" width="2" height="4" fill="#2496ED"/>
+                    <rect x="16" y="16" width="2" height="4" fill="#2496ED"/>
+                    <rect x="20" y="16" width="2" height="4" fill="#2496ED"/>
+                    <path d="M6 20c0 4 6 6 10 6s10-2 10-6h-20z" fill="#2496ED"/>
+                    <path d="M22 20c0-2-2-4-4-4s-4 2-4 4" stroke="#2496ED" strokeWidth="2"/>
                   </svg>
                   <span>Docker & Kubernetes</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
                   </svg>
                   <span>Git & GitHub</span>
                 </li>
@@ -156,26 +228,31 @@ export default function Home() {
               <h4 className="text-xl font-bold mb-4 text-white">AI & Machine Learning</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
+                    <path d="M12 2C12 2 7 8 7 13a5 5 0 1010 0c0-5-5-11-5-11z" stroke="currentColor" strokeWidth="2" fill="none"/>
+                    <circle cx="12" cy="17" r="2" fill="currentColor"/>
                   </svg>
                   <span>TensorFlow & PyTorch</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 25.2c-6.186 0-11.2-5.014-11.2-11.2S9.814 4.8 16 4.8 27.2 9.814 27.2 16 22.186 27.2 16 27.2z" fill="#F37726"/>
+                    <path d="M16 8c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12.8c-2.651 0-4.8-2.149-4.8-4.8s2.149-4.8 4.8-4.8 4.8 2.149 4.8 4.8-2.149 4.8-4.8 4.8z" fill="#F37726"/>
+                    <path d="M16 12.8c-1.767 0-3.2 1.433-3.2 3.2s1.433 3.2 3.2 3.2 3.2-1.433 3.2-3.2-1.433-3.2-3.2-3.2z" fill="#F37726"/>
                   </svg>
                   <span>Jupyter Notebooks</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <path d="M4 16C8 8 24 8 28 16C24 24 8 24 4 16Z" stroke="#76B900" strokeWidth="2" fill="none"/>
+                    <circle cx="16" cy="16" r="4" fill="#76B900"/>
                   </svg>
                   <span>NVIDIA CUDA</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <circle cx="16" cy="16" r="12" stroke="#10A37F" strokeWidth="2"/>
+                    <path d="M16 8v8l6 3" stroke="#10A37F" strokeWidth="2" strokeLinecap="round"/>
                   </svg>
                   <span>OpenAI & Hugging Face</span>
                 </li>
@@ -186,20 +263,25 @@ export default function Home() {
               <h4 className="text-xl font-bold mb-4 text-white">Enterprise Solutions</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <polygon points="16,4 28,12 28,28 16,36 4,28 4,12" stroke="#0071C5" strokeWidth="2" fill="none"/>
                   </svg>
                   <span>VMware vSphere</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <circle cx="8" cy="16" r="3" stroke="#00BFAE" strokeWidth="2"/>
+                    <circle cx="24" cy="8" r="3" stroke="#00BFAE" strokeWidth="2"/>
+                    <circle cx="24" cy="24" r="3" stroke="#00BFAE" strokeWidth="2"/>
+                    <path d="M11 16L21 8M11 16L21 24" stroke="#00BFAE" strokeWidth="2"/>
                   </svg>
                   <span>VMware NSX</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
+                    <rect x="6" y="8" width="20" height="4" rx="2" fill="#7C3AED"/>
+                    <rect x="6" y="14" width="20" height="4" rx="2" fill="#A78BFA"/>
+                    <rect x="6" y="20" width="20" height="4" rx="2" fill="#C4B5FD"/>
                   </svg>
                   <span>VMware vSAN</span>
                 </li>
@@ -349,50 +431,43 @@ export default function Home() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-white text-lg font-bold mb-4">OldWestSolutions</h3>
-              <p className="text-sm">Enterprise-grade VMware infrastructure for modern businesses.</p>
+              <p className="text-sm">Advanced data collection and automation solutions for modern businesses.</p>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
-                <li><a href="#" className="hover:text-white transition-colors">Home</a></li>
-                <li><a href="#features" className="hover:text-white transition-colors">Features</a></li>
-                <li><a href="#about" className="hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#contact" className="hover:text-white transition-colors">Contact</a></li>
+                <li><a href="/" className="hover:text-white transition-colors">Home</a></li>
+                <li><a href="/launch" className="hover:text-white transition-colors">Launch</a></li>
+                <li><a href="/docs" className="hover:text-white transition-colors">Documentation</a></li>
+                <li><a href="/pricing" className="hover:text-white transition-colors">Pricing</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white text-lg font-bold mb-4">Contact</h4>
+              <h4 className="text-white text-lg font-bold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li>Email: info@oldwestsolutions.com</li>
-                <li>Phone: (555) 123-4567</li>
-                <li>Address: 123 Tech Street</li>
-                <li>San Francisco, CA 94105</li>
+                <li><a href="/blog" className="hover:text-white transition-colors">Blog</a></li>
+                <li><a href="/tutorials" className="hover:text-white transition-colors">Tutorials</a></li>
+                <li><a href="/api" className="hover:text-white transition-colors">API Reference</a></li>
+                <li><a href="/status" className="hover:text-white transition-colors">System Status</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="text-white text-lg font-bold mb-4">Follow Us</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="hover:text-white transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                  </svg>
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-                  </svg>
-                </a>
-                <a href="#" className="hover:text-white transition-colors">
-                  <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                  </svg>
-                </a>
-              </div>
+              <h4 className="text-white text-lg font-bold mb-4">Support</h4>
+              <ul className="space-y-2 text-sm">
+                <li><a href="/contact" className="hover:text-white transition-colors">Contact Us</a></li>
+                <li><a href="/faq" className="hover:text-white transition-colors">FAQ</a></li>
+                <li><a href="/support" className="hover:text-white transition-colors">Help Center</a></li>
+                <li><a href="/community" className="hover:text-white transition-colors">Community</a></li>
+              </ul>
             </div>
           </div>
           <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved. | VMware Hosting & Cloud Solutions</p>
-            <p className="mt-2">Terms of Service | Privacy Policy | Cookie Policy</p>
+            <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+            <p className="mt-2">
+              <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a> | 
+              <a href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</a> | 
+              <a href="/cookies" className="hover:text-white transition-colors ml-2">Cookie Policy</a>
+            </p>
           </div>
         </div>
       </footer>
