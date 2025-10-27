@@ -465,19 +465,19 @@ export default function Home() {
             </div>
 
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-4 text-white">Virtual Machines (VM) / Virtual Private Server (VPS)</h4>
+              <h4 className="text-xl font-bold mb-4 text-white">Data Analytics / Business Intelligence (BI)</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
                   <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg>
-                  <span>Application Hosting</span>
+                  <span>Data Visualization</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
-                  <span>Database Servers</span>
+                  <span>Managed Databases</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -489,7 +489,7 @@ export default function Home() {
                   <svg className="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span>Development Environments</span>
+                  <span>Build Environments</span>
                 </li>
               </ul>
             </div>
