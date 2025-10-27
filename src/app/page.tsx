@@ -261,7 +261,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Step into the digital frontier where OldWestSolutions reigns as the ultimate server rental platform. We're not just providing infrastructure—we're empowering your digital empire with lightning-fast dedicated servers, bulletproof VPS hosting, limitless cloud infrastructure, and fortress-grade storage solutions that scale with your wildest ambitions.
+                  Step into the digital frontier where OldWestSolutions reigns as the ultimate server rental platform. We&apos;re not just providing infrastructure—we&apos;re empowering your digital empire with lightning-fast dedicated servers, bulletproof VPS hosting, limitless cloud infrastructure, and fortress-grade storage solutions that scale with your wildest ambitions.
                 </p>
                 
                 {/* Highlighted Features */}

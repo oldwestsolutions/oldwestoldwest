@@ -108,7 +108,7 @@ export default function Wiki() {
 
             <h2 className="text-xl font-bold mb-3">Implementation</h2>
             <p className="mb-4">
-              Lightning Deploy is implemented through OldWestSolutions' proprietary deployment engine, which integrates 
+              Lightning Deploy is implemented through OldWestSolutions&apos; proprietary deployment engine, which integrates 
               with their cloud infrastructure platform. The system automatically handles:
             </p>
             <ul className="list-disc pl-6 mb-4">

@@ -82,12 +82,12 @@ export default function Referral() {
           
           <div className="prose prose-invert max-w-none">
             <p className="text-gray-300 mb-6">
-              OldWestSolutions' Data protection agreement and Terms and conditions apply. All prices mentioned in this agreement are net prices (without VAT) unless stated otherwise. The appropriate VAT will be added.
+              OldWestSolutions&apos; Data protection agreement and Terms and conditions apply. All prices mentioned in this agreement are net prices (without VAT) unless stated otherwise. The appropriate VAT will be added.
             </p>
 
             <h3 className="text-xl font-bold text-white mb-4">Conditions for Participation</h3>
             <p className="text-gray-300 mb-4">
-              Under specific conditions defined by OldWestSolutions, customers who successfully attract new server rental customers may become eligible for credits that they may use on their OldWestSolutions accounts. For the purposes of this document, this program is called the "Referral Program", a "Referrer" is a customer who recruits new server rental customers, and a "Referee" is a new server rental customer who the Referrer successfully recruits.
+              Under specific conditions defined by OldWestSolutions, customers who successfully attract new server rental customers may become eligible for credits that they may use on their OldWestSolutions accounts. For the purposes of this document, this program is called the &quot;Referral Program&quot;, a &quot;Referrer&quot; is a customer who recruits new server rental customers, and a &quot;Referee&quot; is a new server rental customer who the Referrer successfully recruits.
             </p>
             
             <p className="text-gray-300 mb-6">
@@ -170,13 +170,13 @@ export default function Referral() {
                 <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
-                <span>Referrers who are suspected of abusing the Referral Program will be prohibited from participating in the Program. OldWestSolutions will invalidate the Referrer's personalized referral link and will not provide credits that may be the result of abuse. (OldWestSolutions also reserves the right to retroactively revoke credits.)</span>
+                <span>Referrers who are suspected of abusing the Referral Program will be prohibited from participating in the Program. OldWestSolutions will invalidate the Referrer&apos;s personalized referral link and will not provide credits that may be the result of abuse. (OldWestSolutions also reserves the right to retroactively revoke credits.)</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
-                <span>OldWestSolutions' participation in the Referral Program is completely voluntary. OldWestSolutions customers have no legal claim to any potential redress. OldWestSolutions is not required to provide justification or evidence if it suspects abuse on the part of the Referrer.</span>
+                <span>OldWestSolutions&apos; participation in the Referral Program is completely voluntary. OldWestSolutions customers have no legal claim to any potential redress. OldWestSolutions is not required to provide justification or evidence if it suspects abuse on the part of the Referrer.</span>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-5 h-5 text-red-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -198,7 +198,7 @@ export default function Referral() {
           <div className="grid md:grid-cols-2 gap-8">
             <div>
               <h3 className="text-lg font-bold text-white mb-2">How much can I earn?</h3>
-              <p className="text-gray-300 mb-4">You earn $20 for each successful referral. There's no limit to how many people you can refer!</p>
+              <p className="text-gray-300 mb-4">You earn $20 for each successful referral. There&apos;s no limit to how many people you can refer!</p>
               
               <h3 className="text-lg font-bold text-white mb-2">When do I get paid?</h3>
               <p className="text-gray-300 mb-4">You receive your $20 credit when your referred friend spends $10 or more on server rental.</p>
@@ -214,7 +214,7 @@ export default function Referral() {
               <p className="text-gray-300 mb-4">Credits can only be used for OldWestSolutions server rental products and services.</p>
               
               <h3 className="text-lg font-bold text-white mb-2">How do I track my referrals?</h3>
-              <p className="text-gray-300">You can track your referrals and earnings in your account dashboard under the "Referrals" section.</p>
+              <p className="text-gray-300">You can track your referrals and earnings in your account dashboard under the &quot;Referrals&quot; section.</p>
             </div>
           </div>
         </div>

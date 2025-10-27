@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import TopBar from '../components/TopBar';
 
 export default function Newspaper() {
   return (
@@ -26,7 +25,7 @@ export default function Newspaper() {
               <span className="mx-6 text-black font-bold text-sm uppercase tracking-wider">Daily Edition</span>
               <div className="w-20 h-0.5 bg-black"></div>
             </div>
-            <p className="text-gray-700 text-sm italic mb-2">"All the Infrastructure News That's Fit to Deploy"</p>
+             <p className="text-gray-700 text-sm italic mb-2">&quot;All the Infrastructure News That&apos;s Fit to Deploy&quot;</p>
             <div className="text-xs text-gray-600 border-t border-gray-300 pt-2">
               <span className="mr-6">Monday, October 27, 2025</span>
               <span className="mr-6">Vol. 1, No. 1</span>
@@ -54,7 +53,7 @@ export default function Newspaper() {
               DALLAS TECH STARTUP REVOLUTIONIZES SERVER DEPLOYMENT WITH 60-SECOND LAUNCH TIMES
             </h2>
             <div className="flex items-center mb-3 text-xs text-gray-600 border-b border-gray-200 pb-2">
-              <span className="mr-4 font-semibold">By John "Rusty" Serverman</span>
+               <span className="mr-4 font-semibold">By John &quot;Rusty&quot; Serverman</span>
               <span className="mr-4">•</span>
               <span>{new Date().toLocaleDateString()}</span>
             </div>
@@ -66,9 +65,9 @@ export default function Newspaper() {
                   to an unprecedented 60 seconds.
                 </p>
                 <p className="text-sm text-gray-800 leading-relaxed mb-3">
-                  "We're not just deploying servers, we're deploying dreams," said CEO Sarah "Lightning" Cloud, speaking 
-                  from the company's Dallas headquarters. "When a developer has an idea at 2 AM, they shouldn't have to 
-                  wait until sunrise to see it come to life."
+                  &quot;We&apos;re not just deploying servers, we&apos;re deploying dreams,&quot; said CEO Sarah &quot;Lightning&quot; Cloud, speaking 
+                  from the company&apos;s Dallas headquarters. &quot;When a developer has an idea at 2 AM, they shouldn&apos;t have to 
+                  wait until sunrise to see it come to life.&quot;
                 </p>
               </div>
               <div>
@@ -132,7 +131,7 @@ export default function Newspaper() {
               DALLAS TECH SCENE BOOMS WITH INFRASTRUCTURE INNOVATION
             </h3>
             <div className="flex items-center mb-3 text-xs text-gray-600 border-b border-gray-200 pb-2">
-              <span className="mr-4 font-semibold">By Maria "Data" Johnson</span>
+              <span className="mr-4 font-semibold">By Maria &quot;Data&quot; Johnson</span>
               <span className="mr-4">•</span>
               <span>{new Date().toLocaleDateString()}</span>
             </div>
@@ -158,7 +157,7 @@ export default function Newspaper() {
             </div>
             <p className="text-sm text-gray-800 leading-relaxed mb-3">
               "I've been deploying servers for 15 years, and I've never seen anything like this," said 
-              veteran developer Mike "Code" Rodriguez. "One minute I'm clicking deploy, the next minute 
+              veteran developer Mike &quot;Code&quot; Rodriguez. "One minute I'm clicking deploy, the next minute 
               my application is live. It's like watching a digital frontier unfold before your eyes."
             </p>
             <p className="text-sm text-gray-800 leading-relaxed">
