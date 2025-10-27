@@ -1,8 +1,12 @@
 import Link from 'next/link';
+import TopBar from './components/TopBar';
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white font-sans">
+      {/* Top Bar */}
+      <TopBar />
+      
       {/* Header */}
       <header className="w-full flex justify-between items-center py-8 px-8 bg-[#2a2a2a] shadow-md">
         <div className="flex items-center">
@@ -17,46 +21,57 @@ export default function Home() {
       <section className="w-full flex flex-col items-center justify-center py-16 px-4 bg-[#1a1a1a] text-center border-b border-[#333]">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="text-left">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">VMware Solutions for the Modern West</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white">Rent Powerful Servers in the Digital Wild West</h1>
             <p className="text-lg md:text-xl text-gray-300 mb-8">
-              Empowering your business with robust, scalable, and secure VMware infrastructure. OldWestSolutions delivers expert virtualization, cloud migration, and IT management tailored for your needs.
+              Get instant access to high-performance dedicated servers, VPS hosting, and cloud infrastructure. Perfect for gaming, development, mining, and enterprise applications. No long-term contracts, just pure computing power when you need it.
             </p>
-            <a
-              href="/launch"
-              className="inline-flex items-center gap-2 bg-ms-gray-70 text-white px-8 py-3 rounded-full font-semibold text-lg shadow hover:bg-ms-gray-80 transition-colors"
-            >
-              Launch Now
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8m-4 4h8" />
-              </svg>
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link
+                href="/rent"
+                className="inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-semibold text-lg shadow transition-colors"
+              >
+                Rent Server Now
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+              <Link
+                href="/pricing"
+                className="inline-flex items-center gap-2 bg-transparent border-2 border-green-600 text-green-600 hover:bg-green-600 hover:text-white px-8 py-3 rounded-full font-semibold text-lg shadow transition-colors"
+              >
+                Pricing
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                </svg>
+              </Link>
+            </div>
           </div>
           <div className="bg-[#2a2a2a] p-8 rounded-xl shadow-lg">
-            <h2 className="text-2xl font-bold mb-4 text-white">Why Choose Us?</h2>
+            <h2 className="text-2xl font-bold mb-4 text-white">Why Choose Our Servers?</h2>
             <ul className="space-y-4 text-left">
               <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-300">Enterprise-grade VMware infrastructure with 99.99% uptime guarantee</span>
+                <span className="text-gray-300">Instant deployment - servers ready in under 60 seconds</span>
               </li>
               <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-300">24/7 expert support and monitoring</span>
+                <span className="text-gray-300">Pay-as-you-go pricing with no hidden fees</span>
               </li>
               <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-300">Seamless cloud migration and hybrid solutions</span>
+                <span className="text-gray-300">Global data centers for low latency worldwide</span>
               </li>
               <li className="flex items-start gap-3">
-                <svg className="w-6 h-6 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
-                <span className="text-gray-300">Advanced security and compliance features</span>
+                <span className="text-gray-300">24/7 support and 99.9% uptime guarantee</span>
               </li>
             </ul>
           </div>
@@ -66,86 +81,86 @@ export default function Home() {
       {/* Features Section */}
       <section className="w-full max-w-6xl py-16 px-4 grid md:grid-cols-3 gap-8 bg-[#2a2a2a] border-b border-[#333]">
         <div className="flex flex-col items-center text-center">
-          <div className="w-16 h-16 rounded-full bg-ms-gray-60 flex items-center justify-center mb-4">
+          <div className="w-16 h-16 rounded-full bg-green-600 flex items-center justify-center mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold mb-4 text-white">Virtual Machines</h2>
+          <h2 className="text-xl font-bold mb-4 text-white">Dedicated Servers</h2>
           <ul className="text-left space-y-2 text-gray-300">
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>High-performance SSD storage</span>
+              <span>Full server control and customization</span>
             </li>
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Dedicated CPU and RAM resources</span>
+              <span>High-performance CPUs and GPUs</span>
             </li>
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>99.99% uptime guarantee</span>
+              <span>Perfect for gaming and mining</span>
             </li>
           </ul>
         </div>
         <div className="flex flex-col items-center text-center">
-          <div className="w-16 h-16 rounded-full bg-ms-gray-60 flex items-center justify-center mb-4">
+          <div className="w-16 h-16 rounded-full bg-blue-600 flex items-center justify-center mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold mb-4 text-white">Database as a Service</h2>
+          <h2 className="text-xl font-bold mb-4 text-white">VPS Hosting</h2>
           <ul className="text-left space-y-2 text-gray-300">
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>PostgreSQL & MySQL support</span>
+              <span>Scalable virtual private servers</span>
             </li>
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>MongoDB & Redis integration</span>
+              <span>Multiple OS options available</span>
             </li>
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-blue-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Automated daily backups</span>
+              <span>Ideal for web development</span>
             </li>
           </ul>
         </div>
         <div className="flex flex-col items-center text-center">
-          <div className="w-16 h-16 rounded-full bg-ms-gray-60 flex items-center justify-center mb-4">
+          <div className="w-16 h-16 rounded-full bg-purple-600 flex items-center justify-center mb-4">
             <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
           </div>
-          <h2 className="text-xl font-bold mb-4 text-white">Framer Templates</h2>
+          <h2 className="text-xl font-bold mb-4 text-white">Cloud Infrastructure</h2>
           <ul className="text-left space-y-2 text-gray-300">
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-purple-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Modern, responsive designs</span>
+              <span>Auto-scaling cloud resources</span>
             </li>
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-purple-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Customizable components</span>
+              <span>Load balancing and CDN</span>
             </li>
             <li className="flex items-start gap-2">
-              <svg className="w-5 h-5 text-ms-gray-60 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-5 h-5 text-purple-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
-              <span>Built-in animations</span>
+              <span>Enterprise-grade security</span>
             </li>
           </ul>
         </div>
@@ -153,29 +168,29 @@ export default function Home() {
 
       {/* About Us Section */}
       <section className="w-full max-w-6xl py-16 px-4 bg-[#1a1a1a] border-b border-[#333]">
-        <h2 className="text-3xl font-bold text-center mb-10 text-white">What is OldWestSolutions?</h2>
+        <h2 className="text-3xl font-bold text-center mb-10 text-white">Why Choose OldWestSolutions?</h2>
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-[#2a2a2a] rounded-xl shadow p-8">
             <h3 className="text-2xl font-bold mb-4 text-white">Our Mission</h3>
             <p className="text-gray-300 mb-6">
-              OldWestSolutions is a premier VMware infrastructure provider, delivering enterprise-grade cloud solutions to businesses worldwide. We specialize in creating robust, scalable, and secure virtual environments that empower organizations to focus on innovation and growth.
+              OldWestSolutions is the premier server rental platform in the digital frontier. We provide instant access to high-performance dedicated servers, VPS hosting, and cloud infrastructure for gamers, developers, miners, and businesses worldwide.
             </p>
             <p className="text-gray-300">
-              Our platform enables businesses to develop, test, and deploy applications with confidence, backed by our expert team and cutting-edge infrastructure. Whether you&apos;re building AI applications, developing cross-platform solutions, or automating testing processes, our VMware environment provides the perfect foundation for your success.
+              Our platform enables you to deploy powerful servers in under 60 seconds, with no long-term contracts or hidden fees. Whether you&apos;re hosting a game server, running cryptocurrency mining, developing applications, or scaling your business, we provide the computing power you need when you need it.
             </p>
           </div>
           <div className="space-y-6">
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Web Crawlers</h4>
-              <p className="text-gray-300">Powerful distributed crawlers that efficiently index and extract data from websites while respecting robots.txt and rate limits.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Gaming Servers</h4>
+              <p className="text-gray-300">High-performance gaming servers with low latency and dedicated resources for Minecraft, CS:GO, Rust, and more popular games.</p>
             </div>
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Data Scrapers</h4>
-              <p className="text-gray-300">Advanced scraping solutions with built-in proxy rotation, CAPTCHA handling, and automatic retry mechanisms for reliable data extraction.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Mining Infrastructure</h4>
+              <p className="text-gray-300">Powerful GPU servers optimized for cryptocurrency mining with competitive electricity rates and reliable uptime.</p>
             </div>
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">API Wrappers</h4>
-              <p className="text-gray-300">Robust API wrappers that simplify integration with popular services, featuring automatic rate limiting, caching, and error handling.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Development & Testing</h4>
+              <p className="text-gray-300">Flexible VPS and cloud servers perfect for web development, testing applications, and running development environments.</p>
             </div>
           </div>
         </div>
