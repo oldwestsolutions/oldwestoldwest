@@ -170,24 +170,24 @@ export default function Home() {
           <div className="bg-[#2a2a2a] rounded-xl shadow p-8">
             <h3 className="text-2xl font-bold mb-4 text-white">Our Mission</h3>
             <p className="text-gray-300 mb-6">
-              OldWestSolutions is the premier server rental platform in the digital frontier. We provide instant access to high-performance dedicated servers, VPS hosting, and cloud infrastructure for gamers, developers, miners, and businesses worldwide.
+              OldWestSolutions is the premier server rental platform in the digital frontier. We provide instant access to high-performance dedicated servers, VPS hosting, cloud infrastructure, and comprehensive storage solutions for businesses worldwide.
             </p>
             <p className="text-gray-300">
-              Our platform enables you to deploy powerful servers in under 60 seconds, with no long-term contracts or hidden fees. Whether you&apos;re hosting a game server, running cryptocurrency mining, developing applications, or scaling your business, we provide the computing power you need when you need it.
+              Our platform enables you to deploy powerful servers in under 60 seconds, with no long-term contracts or hidden fees. Whether you&apos;re running applications, managing data storage, or securing your network, we provide the computing power and services you need when you need it.
             </p>
           </div>
           <div className="space-y-6">
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Gaming Servers</h4>
-              <p className="text-gray-300">High-performance gaming servers with low latency and dedicated resources for Minecraft, CS:GO, Rust, and more popular games.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Object Storage</h4>
+              <p className="text-gray-300">Get S3-compatible unlimited storage on demand. Scalable, secure, and cost-effective object storage for your applications and data.</p>
             </div>
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Mining Infrastructure</h4>
-              <p className="text-gray-300">Powerful GPU servers optimized for cryptocurrency mining with competitive electricity rates and reliable uptime.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">Virtual Private Servers</h4>
+              <p className="text-gray-300">A virtual private server, also referred to as a VPS, is a virtual dedicated server. Unlike web hosting (also known as shared hosting), where the technical aspects are managed by the provider — you are the administrator of your VPS, and fully manage it.</p>
             </div>
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-3 text-white">Development & Testing</h4>
-              <p className="text-gray-300">Flexible VPS and cloud servers perfect for web development, testing applications, and running development environments.</p>
+              <h4 className="text-xl font-bold mb-3 text-white">VPN Services by Deadwood</h4>
+              <p className="text-gray-300">Secure your network with Deadwood&apos;s premium VPN services. High-speed, encrypted connections with global server locations for maximum privacy and security.</p>
             </div>
           </div>
         </div>
@@ -197,116 +197,85 @@ export default function Home() {
           <h3 className="text-3xl font-bold text-center mb-10 text-white">Why OldWestSolutions?</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-4 text-white">Development & Testing</h4>
+              <h4 className="text-xl font-bold mb-4 text-white">CI/CD - Continuous Integration and Deployment</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <path d="M6 22L24 8V24L6 10" fill="#0066B8"/>
-                    <path d="M6 10L12 16L6 22" fill="#007ACC"/>
-                    <path d="M12 16L24 8V24L12 16Z" fill="#1F9CF0"/>
+                  <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                   </svg>
-                  <span>Visual Studio & VS Code</span>
+                  <span>Automated Builds</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <rect x="4" y="4" width="24" height="24" rx="4" fill="url(#jbGradient)"/>
-                    <path d="M12 12h8v8h-8z" fill="white" fillOpacity="0.2"/>
-                    <defs>
-                      <linearGradient id="jbGradient" x1="4" y1="4" x2="28" y2="28" gradientUnits="userSpaceOnUse">
-                        <stop stopColor="#FCF84A"/>
-                        <stop offset="0.5" stopColor="#A259FF"/>
-                        <stop offset="1" stopColor="#FF6257"/>
-                      </linearGradient>
-                    </defs>
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <span>JetBrains IDEs</span>
+                  <span>Continuous Testing</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <rect x="8" y="16" width="2" height="4" fill="#2496ED"/>
-                    <rect x="12" y="16" width="2" height="4" fill="#2496ED"/>
-                    <rect x="16" y="16" width="2" height="4" fill="#2496ED"/>
-                    <rect x="20" y="16" width="2" height="4" fill="#2496ED"/>
-                    <path d="M6 20c0 4 6 6 10 6s10-2 10-6h-20z" fill="#2496ED"/>
-                    <path d="M22 20c0-2-2-4-4-4s-4 2-4 4" stroke="#2496ED" strokeWidth="2"/>
+                  <svg className="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M9 19l3 3m0 0l3-3m-3 3V10" />
                   </svg>
-                  <span>Docker & Kubernetes</span>
+                  <span>Automated Deployment</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.17 6.839 9.49.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0112 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.167 22 16.418 22 12c0-5.523-4.477-10-10-10z"/>
+                  <svg className="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  <span>Git & GitHub</span>
+                  <span>Pipeline Orchestration</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-4 text-white">AI & Machine Learning</h4>
+              <h4 className="text-xl font-bold mb-4 text-white">Identity & Access Management (IAM)</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none">
-                    <path d="M12 2C12 2 7 8 7 13a5 5 0 1010 0c0-5-5-11-5-11z" stroke="currentColor" strokeWidth="2" fill="none"/>
-                    <circle cx="12" cy="17" r="2" fill="currentColor"/>
+                  <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 7a2 2 0 012 2m4 0a6 6 0 01-7.743 5.743L11 17H9v2H7v2H4a1 1 0 01-1-1v-2.586a1 1 0 01.293-.707l5.964-5.964A6 6 0 1121 9z" />
                   </svg>
-                  <span>TensorFlow & PyTorch</span>
+                  <span>Single Sign-On (SSO) and OAuth integration</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <path d="M16 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2zm0 25.2c-6.186 0-11.2-5.014-11.2-11.2S9.814 4.8 16 4.8 27.2 9.814 27.2 16 22.186 27.2 16 27.2z" fill="#F37726"/>
-                    <path d="M16 8c-4.418 0-8 3.582-8 8s3.582 8 8 8 8-3.582 8-8-3.582-8-8-8zm0 12.8c-2.651 0-4.8-2.149-4.8-4.8s2.149-4.8 4.8-4.8 4.8 2.149 4.8 4.8-2.149 4.8-4.8 4.8z" fill="#F37726"/>
-                    <path d="M16 12.8c-1.767 0-3.2 1.433-3.2 3.2s1.433 3.2 3.2 3.2 3.2-1.433 3.2-3.2-1.433-3.2-3.2-3.2z" fill="#F37726"/>
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                   </svg>
-                  <span>Jupyter Notebooks</span>
+                  <span>Role-based access control (RBAC) for users and apps</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <path d="M4 16C8 8 24 8 28 16C24 24 8 24 4 16Z" stroke="#76B900" strokeWidth="2" fill="none"/>
-                    <circle cx="16" cy="16" r="4" fill="#76B900"/>
+                  <svg className="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
-                  <span>NVIDIA CUDA</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <circle cx="16" cy="16" r="12" stroke="#10A37F" strokeWidth="2"/>
-                    <path d="M16 8v8l6 3" stroke="#10A37F" strokeWidth="2" strokeLinecap="round"/>
-                  </svg>
-                  <span>OpenAI & Hugging Face</span>
+                  <span>Secret Management: Safely store API keys, passwords, certificates</span>
                 </li>
               </ul>
             </div>
 
             <div className="bg-[#2a2a2a] rounded-xl shadow p-6">
-              <h4 className="text-xl font-bold mb-4 text-white">Enterprise Solutions</h4>
+              <h4 className="text-xl font-bold mb-4 text-white">Virtual Machines (VM) / Virtual Private Server (VPS)</h4>
               <ul className="space-y-4 text-gray-300">
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <polygon points="16,4 28,12 28,28 16,36 4,28 4,12" stroke="#0071C5" strokeWidth="2" fill="none"/>
+                  <svg className="w-8 h-8 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
                   </svg>
-                  <span>VMware vSphere</span>
+                  <span>Application Hosting</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <circle cx="8" cy="16" r="3" stroke="#00BFAE" strokeWidth="2"/>
-                    <circle cx="24" cy="8" r="3" stroke="#00BFAE" strokeWidth="2"/>
-                    <circle cx="24" cy="24" r="3" stroke="#00BFAE" strokeWidth="2"/>
-                    <path d="M11 16L21 8M11 16L21 24" stroke="#00BFAE" strokeWidth="2"/>
+                  <svg className="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                   </svg>
-                  <span>VMware NSX</span>
+                  <span>Database Servers</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 32 32" fill="none">
-                    <rect x="6" y="8" width="20" height="4" rx="2" fill="#7C3AED"/>
-                    <rect x="6" y="14" width="20" height="4" rx="2" fill="#A78BFA"/>
-                    <rect x="6" y="20" width="20" height="4" rx="2" fill="#C4B5FD"/>
+                  <svg className="w-8 h-8 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
-                  <span>VMware vSAN</span>
+                  <span>Trading Engines</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+                  <svg className="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
-                  <span>VMware Horizon</span>
+                  <span>Development Environments</span>
                 </li>
               </ul>
             </div>
@@ -413,30 +382,29 @@ export default function Home() {
         <h2 className="text-3xl font-bold text-center mb-12 text-white">Our Partners</h2>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-            <div className="bg-white p-4 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 24 24" fill="#4285F4">
-                <path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/>
-              </svg>
+            {/* IBM */}
+            <div className="p-4 w-32 h-32 flex items-center justify-center">
+              <img src="/ibm.png" alt="IBM" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 24 24" fill="#0078D4">
-                <path d="M11.4 24H0V12.6h11.4V24zM24 24H12.6V12.6H24V24zM11.4 11.4H0V0h11.4v11.4zM24 11.4H12.6V0H24v11.4z"/>
-              </svg>
+            
+            {/* Oracle */}
+            <div className="p-4 w-32 h-32 flex items-center justify-center">
+              <img src="/oracle.png" alt="Oracle" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 24 24" fill="#000000">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
-              </svg>
+            
+            {/* Salesforce */}
+            <div className="p-4 w-32 h-32 flex items-center justify-center">
+              <img src="/salesforce.png" alt="Salesforce" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 24 24" fill="#1F70C1">
-                <path d="M22.5 9.5c0-1.2-.4-2.2-1.2-3-.8-.8-1.8-1.2-3-1.2h-4.5V3h-3v2.3h-4.5c-1.2 0-2.2.4-3 1.2-.8.8-1.2 1.8-1.2 3v5c0 1.2.4 2.2 1.2 3 .8.8 1.8 1.2 3 1.2h4.5V21h3v-2.3h4.5c1.2 0 2.2-.4 3-1.2.8-.8 1.2-1.8 1.2-3v-5zm-2 5c0 .6-.2 1.1-.6 1.5-.4.4-.9.6-1.5.6h-4.5V9.5h4.5c.6 0 1.1.2 1.5.6.4.4.6.9.6 1.5v5z"/>
-              </svg>
+            
+            {/* Google */}
+            <div className="p-4 w-32 h-32 flex items-center justify-center">
+              <img src="/google.png" alt="Google" className="max-w-full max-h-full object-contain" />
             </div>
-            <div className="bg-white p-4 rounded-lg shadow-md w-32 h-32 flex items-center justify-center">
-              <svg className="w-24 h-24" viewBox="0 0 24 24" fill="#FF4B4B">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
-              </svg>
+            
+            {/* Coinbase */}
+            <div className="p-4 w-32 h-32 flex items-center justify-center">
+              <img src="/coinbase.png" alt="Coinbase" className="max-w-full max-h-full object-contain" />
             </div>
           </div>
         </div>
