@@ -1,16 +1,13 @@
 import Link from 'next/link';
-import TopBar from './components/TopBar';
 
 export default function Home() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white" style={{fontFamily: 'Georgia, serif'}}>
-      {/* Top Bar */}
-      <TopBar />
       
       {/* Header */}
       <header className="w-full flex justify-between items-center py-8 px-8 bg-[#2a2a2a] shadow-md">
         <div className="flex items-center">
-          <Link href="/" className="text-3xl font-extrabold tracking-tight flex items-center">
+          <Link href="/" className="text-xl md:text-3xl font-extrabold tracking-tight flex items-center">
             <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8 mr-3" />
             OldWestSolutions
           </Link>

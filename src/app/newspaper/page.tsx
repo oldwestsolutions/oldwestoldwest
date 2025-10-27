@@ -9,6 +9,7 @@ export default function Newspaper() {
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
             <img src="/black logo.png" alt="OldWestSolutions Logo" className="w-6 h-6" />
+            <span className="ml-2 text-lg md:text-xl font-bold text-black">OldWestSolutions</span>
           </Link>
         </div>
       </header>
