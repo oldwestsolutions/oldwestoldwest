@@ -309,7 +309,7 @@ export default function RentServer() {
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
                 <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link href="/support" className="hover:text-white transition-colors">Help Center</Link></li>
-                <li><Link href="/status" className="hover:text-white transition-colors">System Status</Link></li>
+                <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
               </ul>
             </div>
             <div>
