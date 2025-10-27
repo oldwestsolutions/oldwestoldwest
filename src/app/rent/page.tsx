@@ -295,11 +295,10 @@ export default function RentServer() {
               <p className="text-sm">Premier server rental platform for the digital frontier.</p>
             </div>
             <div>
-              <h4 className="text-white text-lg font-bold mb-4">Quick Links</h4>
+              <h4 className="text-white text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link href="/rent" className="hover:text-white transition-colors">Rent Server</Link></li>
-                <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               </ul>
             </div>

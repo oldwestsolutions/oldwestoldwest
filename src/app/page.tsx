@@ -3,7 +3,7 @@ import TopBar from './components/TopBar';
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white font-sans">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white" style={{fontFamily: 'Georgia, serif'}}>
       {/* Top Bar */}
       <TopBar />
       
@@ -261,7 +261,7 @@ export default function Home() {
               
               <div className="space-y-6">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  OldWestSolutions is the premier server rental platform in the digital frontier. We provide instant access to high-performance dedicated servers, VPS hosting, cloud infrastructure, and comprehensive storage solutions for businesses worldwide.
+                  Step into the digital frontier where OldWestSolutions reigns as the ultimate server rental platform. We're not just providing infrastructure—we're empowering your digital empire with lightning-fast dedicated servers, bulletproof VPS hosting, limitless cloud infrastructure, and fortress-grade storage solutions that scale with your wildest ambitions.
                 </p>
                 
                 {/* Highlighted Features */}
@@ -273,9 +273,9 @@ export default function Home() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <span className="text-green-400 font-bold text-lg">Deploy in under 60 seconds</span>
+                      <span className="text-green-400 font-bold text-lg">Lightning-Fast Deployment</span>
                     </div>
-                    <p className="text-gray-300 text-sm ml-11">No long-term contracts or hidden fees</p>
+                    <p className="text-gray-300 text-sm ml-11">Your infrastructure comes online in under 60 seconds—no shackles, no hidden traps</p>
                   </div>
                   
                   <div className="bg-gradient-to-r from-blue-500/20 to-blue-600/20 rounded-lg p-4 border border-blue-500/30 backdrop-blur-sm">
@@ -285,13 +285,13 @@ export default function Home() {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
                       </div>
-                      <span className="text-blue-400 font-bold">Enterprise-Grade Security</span>
+                      <span className="text-blue-400 font-bold">Fortress-Level Security</span>
                     </div>
                   </div>
                 </div>
                 
                 <p className="text-gray-300 leading-relaxed">
-                  Whether you&apos;re running applications, managing data storage, or securing your network, we provide the computing power and services you need when you need it.
+                  From launching your next breakthrough application to safeguarding your most critical data vaults, from orchestrating complex network architectures to scaling your digital dominion—we deliver the raw computing power and battle-tested services that transform your boldest visions into unstoppable reality.
                 </p>
               </div>
             </div>
@@ -636,21 +636,19 @@ export default function Home() {
               <p className="text-sm">Advanced data collection and automation solutions for modern businesses.</p>
             </div>
             <div>
-              <h4 className="text-white text-lg font-bold mb-4">Quick Links</h4>
+              <h4 className="text-white text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link href="/launch" className="hover:text-white transition-colors">Launch</Link></li>
-                <li><Link href="/docs" className="hover:text-white transition-colors">Documentation</Link></li>
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Resources</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/blog" className="hover:text-white transition-colors">Blog</Link></li>
-                <li><Link href="/tutorials" className="hover:text-white transition-colors">Tutorials</Link></li>
-                <li><Link href="/api" className="hover:text-white transition-colors">API Reference</Link></li>
+                <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
                 <li><Link href="/status" className="hover:text-white transition-colors">System Status</Link></li>
+                <li><Link href="/wiki" className="hover:text-white transition-colors">Wiki</Link></li>
               </ul>
             </div>
             <div>

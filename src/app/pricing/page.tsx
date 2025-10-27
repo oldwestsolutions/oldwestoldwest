@@ -3,7 +3,7 @@ import TopBar from '../components/TopBar';
 
 export default function Pricing() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white font-sans">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white" style={{fontFamily: 'Georgia, serif'}}>
       {/* Top Bar */}
       <TopBar />
       
