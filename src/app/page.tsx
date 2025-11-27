@@ -34,9 +34,8 @@ export default function Home() {
                 Professional Services for Your{' '}
                 <span className="text-black" style={{
                   WebkitTextStroke: '2px white',
-                  textStroke: '2px white',
-                  textShadow: '0 0 20px rgba(255,255,255,0.3)'
-                }}>
+                  textShadow: '0 0 20px rgba(255,255,255,0.3), 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white'
+                } as React.CSSProperties}>
                   Home & Code
                 </span>
               </h1>
