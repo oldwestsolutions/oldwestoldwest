@@ -648,106 +648,7 @@ export default function Home() {
       {/* Network Section - Full Page */}
       <section id="network" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
-          {/* Left Side - Visual Card */}
-          <div className="relative">
-            <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-purple-500/20">
-              <h2 className="text-3xl font-bold text-purple-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                oldwest.net Network
-              </h2>
-              <p className="text-gray-400 mb-8 text-sm">
-                Revolutionary network solutions for gaming, bandwidth sharing, and Ethereum VM services with ad sharing capabilities through our distributed network infrastructure
-              </p>
-              
-              {/* Network Illustration */}
-              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-purple-500/30 mb-8">
-                <div className="flex flex-col items-center">
-                  {/* Network Nodes Diagram */}
-                  <div className="relative w-64 h-64 mb-6">
-                    {/* Central Node */}
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                      <div className="w-16 h-16 bg-purple-500 rounded-full border-4 border-purple-400 flex items-center justify-center">
-                        <span className="text-white font-bold text-xs">oldwest.net</span>
-                      </div>
-                    </div>
-                    
-                    {/* Connected Nodes */}
-                    <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                      <div className="w-12 h-12 bg-purple-400/60 rounded-full border-2 border-purple-300"></div>
-                      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-0.5 bg-purple-400/40"></div>
-                    </div>
-                    
-                    <div className="absolute top-1/2 left-8 transform -translate-y-1/2">
-                      <div className="w-12 h-12 bg-purple-400/60 rounded-full border-2 border-purple-300"></div>
-                      <div className="absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 w-24 h-0.5 bg-purple-400/40"></div>
-                    </div>
-                    
-                    <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
-                      <div className="w-12 h-12 bg-purple-400/60 rounded-full border-2 border-purple-300"></div>
-                      <div className="absolute bottom-1/2 left-1/2 transform -translate-x-1/2 translate-y-full w-24 h-0.5 bg-purple-400/40"></div>
-                    </div>
-                    
-                    <div className="absolute top-1/2 right-8 transform translate-y-1/2">
-                      <div className="w-12 h-12 bg-purple-400/60 rounded-full border-2 border-purple-300"></div>
-                      <div className="absolute top-1/2 left-0 transform -translate-x-full -translate-y-1/2 w-24 h-0.5 bg-purple-400/40"></div>
-                    </div>
-                    
-                    {/* Data Flow Lines */}
-                    <div className="absolute inset-0">
-                      <svg className="w-full h-full" viewBox="0 0 256 256">
-                        <line x1="128" y1="128" x2="128" y2="64" stroke="rgba(168, 85, 247, 0.4)" strokeWidth="2" />
-                        <line x1="128" y1="128" x2="64" y2="128" stroke="rgba(168, 85, 247, 0.4)" strokeWidth="2" />
-                        <line x1="128" y1="128" x2="128" y2="192" stroke="rgba(168, 85, 247, 0.4)" strokeWidth="2" />
-                        <line x1="128" y1="128" x2="192" y2="128" stroke="rgba(168, 85, 247, 0.4)" strokeWidth="2" />
-                      </svg>
-                    </div>
-                  </div>
-                  <p className="text-purple-400 font-semibold text-lg mb-2">Network Infrastructure</p>
-                  <p className="text-gray-400 text-sm text-center">Gaming, bandwidth sharing, and Ethereum VM services</p>
-                </div>
-              </div>
-              
-              {/* Features */}
-              <div className="space-y-4">
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Gaming Network</p>
-                    <p className="text-gray-400 text-sm">Ultra-low latency gaming</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Bandwidth Sharing</p>
-                    <p className="text-gray-400 text-sm">Monetize your bandwidth</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start gap-4">
-                  <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-white font-medium">Ethereum VM Services</p>
-                    <p className="text-gray-400 text-sm">Deploy smart contracts</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          {/* Right Side - Content */}
+          {/* Left Side - Content */}
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
@@ -813,6 +714,68 @@ export default function Home() {
               >
                 Learn More
               </Link>
+            </div>
+          </div>
+          
+          {/* Right Side - Visual Card */}
+          <div className="relative">
+            <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-purple-500/20">
+              <h2 className="text-3xl font-bold text-purple-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
+                oldwest.net Network
+              </h2>
+              <p className="text-gray-400 mb-8 text-sm">
+                Revolutionary network solutions for gaming, bandwidth sharing, and Ethereum VM services with ad sharing capabilities through our distributed network infrastructure
+              </p>
+              
+              {/* Image Placeholder */}
+              <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-purple-500/30 mb-8">
+                <div className="flex flex-col items-center">
+                  <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
+                    <img src="/network-image.jpg" alt="Network Infrastructure" className="w-full h-full object-cover" />
+                  </div>
+                  <p className="text-purple-400 font-semibold text-lg mb-2">Network Infrastructure</p>
+                  <p className="text-gray-400 text-sm text-center">Gaming, bandwidth sharing, and Ethereum VM services</p>
+                </div>
+              </div>
+              
+              {/* Features */}
+              <div className="space-y-4">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Gaming Network</p>
+                    <p className="text-gray-400 text-sm">Ultra-low latency gaming</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Bandwidth Sharing</p>
+                    <p className="text-gray-400 text-sm">Monetize your bandwidth</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-white font-medium">Ethereum VM Services</p>
+                    <p className="text-gray-400 text-sm">Deploy smart contracts</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1114,7 +1077,14 @@ export default function Home() {
                 <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8" />
                 <h3 className="text-white text-lg font-bold">OldWestSolutions</h3>
               </div>
-              <p className="text-sm">Professional services for your home and code. Roofing, solar, and pull request management.</p>
+              <p className="text-sm mb-3">Professional services for your home and code. Roofing, solar, and pull request management.</p>
+              <div className="flex items-center gap-2 text-sm">
+                <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span className="text-gray-400">USA</span>
+              </div>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Services</h4>
