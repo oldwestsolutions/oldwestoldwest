@@ -149,47 +149,11 @@ export default function Home() {
                 Comprehensive residential contracting services including roofing, HVAC, appliances, plumbing, and more with our verified contractor network
               </p>
               
-              {/* House Illustration */}
+              {/* House Image */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-orange-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  {/* House Illustration */}
-                  <div className="relative w-64 h-64 mb-6">
-                    {/* House Base */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-32 bg-gradient-to-b from-orange-600/80 to-orange-700/80 rounded-t-lg border-2 border-orange-400/50">
-                      {/* Windows */}
-                      <div className="absolute left-6 top-6 w-8 h-8 bg-yellow-400/30 rounded border border-yellow-400/50">
-                        <div className="w-full h-full flex items-center justify-center">
-                          <div className="w-3 h-3 bg-yellow-400/50 rounded"></div>
-                        </div>
-                      </div>
-                      <div className="absolute right-6 top-6 w-8 h-8 bg-yellow-400/30 rounded border border-yellow-400/50">
-                        <div className="w-full h-full flex items-center justify-center">
-                          <div className="w-3 h-3 bg-yellow-400/50 rounded"></div>
-                        </div>
-                      </div>
-                      {/* Door */}
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-16 bg-orange-800/80 rounded-t border-2 border-orange-400/50">
-                        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-orange-400 rounded-full"></div>
-                      </div>
-                    </div>
-                    {/* Roof */}
-                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
-                      <svg width="200" height="120" viewBox="0 0 200 120" className="drop-shadow-2xl">
-                        <polygon points="100,20 40,80 160,80" fill="url(#roofGradient)" stroke="#f97316" strokeWidth="3" />
-                        <defs>
-                          <linearGradient id="roofGradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                            <stop offset="0%" stopColor="#f97316" stopOpacity="0.9" />
-                            <stop offset="100%" stopColor="#ea580c" stopOpacity="0.9" />
-                          </linearGradient>
-                        </defs>
-                      </svg>
-                    </div>
-                    {/* Protection Shield */}
-                    <div className="absolute top-4 right-4 w-16 h-16 bg-orange-500/20 rounded-full border-2 border-orange-400/50 flex items-center justify-center backdrop-blur-sm">
-                      <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                      </svg>
-                    </div>
+                  <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
+                    <img src="/house.jpg" alt="Maximum Protection" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-orange-400 font-semibold text-lg mb-2">Maximum Protection</p>
                   <p className="text-gray-400 text-sm text-center">Weather-resistant materials and expert craftsmanship</p>
