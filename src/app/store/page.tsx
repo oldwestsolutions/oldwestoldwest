@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Header from '../components/Header';
 
-export default function Shop() {
+export default function Store() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white" style={{fontFamily: 'Georgia, serif'}}>
       <Header />
@@ -15,7 +15,7 @@ export default function Shop() {
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            OldWest <span className="text-orange-400">Shop</span>
+            OldWest <span className="text-orange-400">Store</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
             Discover quality products and services for your home and business needs.
@@ -85,7 +85,7 @@ export default function Shop() {
           </div>
 
           <div className="bg-[#2a2a2a] rounded-2xl p-12 border border-orange-500/20">
-            <h3 className="text-3xl font-bold text-white mb-6 text-center">Shop Categories</h3>
+            <h3 className="text-3xl font-bold text-white mb-6 text-center">Store Categories</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-orange-500/20 rounded-lg flex items-center justify-center mx-auto mb-4">
@@ -172,7 +172,7 @@ export default function Shop() {
                 <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
                 <li><Link href="/documents" className="hover:text-white transition-colors">Documents</Link></li>
                 <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
-                <li><Link href="/shop" className="hover:text-white transition-colors">Shop</Link></li>
+                <li><Link href="/store" className="hover:text-white transition-colors">Store</Link></li>
               </ul>
             </div>
             <div>
