@@ -36,8 +36,8 @@ export default function Header() {
     >
       <div className="flex items-center">
         <Link href="/" className="text-xl md:text-3xl font-extrabold tracking-tight flex items-center">
-          <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8 md:mr-3" />
-          <span className="hidden md:inline">OldWestSolutions</span>
+          <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8 mr-3" />
+          OldWestSolutions
         </Link>
       </div>
       <div className="flex items-center gap-2 md:gap-4">
