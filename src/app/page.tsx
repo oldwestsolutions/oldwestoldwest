@@ -472,61 +472,11 @@ export default function Home() {
                 Comprehensive repository management including pull/merge requests, issues, and version control with our verified developer network
               </p>
               
-              {/* Git Branch Illustration */}
+              {/* Repository Image */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-blue-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  {/* Git Branch Diagram */}
-                  <div className="relative w-64 h-64 mb-6">
-                    {/* Main Branch */}
-                    <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
-                      <div className="w-32 h-1 bg-blue-500 rounded"></div>
-                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-2 border-blue-400"></div>
-                    </div>
-                    
-                    {/* Feature Branch 1 */}
-                    <div className="absolute top-16 left-1/2 transform -translate-x-1/2">
-                      <div className="w-20 h-1 bg-blue-400/60 rounded transform rotate-45 origin-left"></div>
-                      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-3 h-3 bg-blue-400 rounded-full border border-blue-300"></div>
-                    </div>
-                    
-                    {/* Feature Branch 2 */}
-                    <div className="absolute top-24 left-1/2 transform translate-x-1/2">
-                      <div className="w-20 h-1 bg-blue-400/60 rounded transform -rotate-45 origin-right"></div>
-                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-3 h-3 bg-blue-400 rounded-full border border-blue-300"></div>
-                    </div>
-                    
-                    {/* Merge Point */}
-                    <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
-                      <div className="w-32 h-1 bg-blue-500 rounded"></div>
-                      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-blue-600 rounded-full border-2 border-blue-400 flex items-center justify-center">
-                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      </div>
-                    </div>
-                    
-                    {/* Code Blocks */}
-                    <div className="absolute bottom-4 left-4 w-16 h-12 bg-gray-800 rounded border border-blue-500/30 p-2">
-                      <div className="space-y-1">
-                        <div className="h-1 bg-blue-400/40 rounded w-3/4"></div>
-                        <div className="h-1 bg-blue-400/40 rounded w-full"></div>
-                        <div className="h-1 bg-blue-400/40 rounded w-2/3"></div>
-                      </div>
-                    </div>
-                    <div className="absolute bottom-4 right-4 w-16 h-12 bg-gray-800 rounded border border-blue-500/30 p-2">
-                      <div className="space-y-1">
-                        <div className="h-1 bg-blue-400/40 rounded w-full"></div>
-                        <div className="h-1 bg-blue-400/40 rounded w-3/4"></div>
-                        <div className="h-1 bg-blue-400/40 rounded w-5/6"></div>
-                      </div>
-                    </div>
-                    
-                    {/* Review Checkmark */}
-                    <div className="absolute top-4 right-4 w-12 h-12 bg-blue-500/20 rounded-full border-2 border-blue-400/50 flex items-center justify-center backdrop-blur-sm">
-                      <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                    </div>
+                  <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
+                    <img src="/скрипт.jpg" alt="Repository Management" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-blue-400 font-semibold text-lg mb-2">Repository Management</p>
                   <p className="text-gray-400 text-sm text-center">Pull/merge requests, issues, and version control</p>
