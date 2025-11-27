@@ -958,6 +958,7 @@ export default function Home() {
                 <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
                 <li><Link href="/documents" className="hover:text-white transition-colors">Documents</Link></li>
                 <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
+                <li><Link href="/shop" className="hover:text-white transition-colors">Shop</Link></li>
               </ul>
             </div>
             <div>
