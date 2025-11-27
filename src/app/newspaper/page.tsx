@@ -1,245 +1,145 @@
 import Link from 'next/link';
+import Header from '../components/Header';
 
 export default function Newspaper() {
   return (
-    <div className="min-h-screen bg-gray-100 text-black" style={{fontFamily: 'Georgia, serif'}}>
-      
-      {/* Header */}
-      <header className="w-full flex justify-start items-center py-4 px-8 bg-white shadow-sm border-b">
-        <div className="flex items-center">
-          <Link href="/" className="flex items-center">
-            <img src="/black logo.png" alt="OldWestSolutions Logo" className="w-6 h-6" />
-            <span className="ml-2 text-lg md:text-xl font-bold text-black">OldWestSolutions</span>
-          </Link>
-        </div>
-      </header>
+    <div className="min-h-screen bg-[#0a0a0a] text-white" style={{fontFamily: 'Georgia, serif'}}>
+      <Header />
 
-      {/* Newspaper Header */}
-      <div className="bg-white border-b-2 border-black">
-        <div className="max-w-6xl mx-auto px-4 py-6">
-          <div className="text-center">
-            <h1 className="text-5xl md:text-7xl font-bold text-black mb-2 tracking-tight" style={{fontFamily: 'serif'}}>
-              Old West Solutions Press
-            </h1>
-            <div className="flex justify-center items-center mb-3">
-              <div className="w-20 h-0.5 bg-black"></div>
-              <span className="mx-6 text-black font-bold text-sm uppercase tracking-wider">Daily Edition</span>
-              <div className="w-20 h-0.5 bg-black"></div>
-            </div>
-             <p className="text-gray-700 text-sm italic mb-2">&quot;All the Infrastructure News That&apos;s Fit to Deploy&quot;</p>
-            <div className="text-xs text-gray-600 border-t border-gray-300 pt-2">
-              <span className="mr-6">Monday, October 27, 2025</span>
-              <span className="mr-6">Vol. 1, No. 1</span>
-              <span>50¢</span>
-            </div>
-          </div>
+      {/* Hero Section */}
+      <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden pt-32">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-red-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-red-600/10 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
-      </div>
-
-      {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-4 py-6">
-        {/* Breaking News Banner */}
-        <div className="bg-red-600 text-white py-1 px-4 mb-4 text-center font-bold text-sm uppercase tracking-wide">
-          🚨 Breaking News: OldWestSolutions Achieves 99.9% Uptime Across All Data Centers 🚨
+        
+        <div className="max-w-6xl mx-auto text-center relative z-10">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+            OldWest <span className="text-red-400">Newspaper</span>
+          </h1>
+          <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+            Stay informed with the latest news, updates, and insights from OldWestSolutions.
+          </p>
         </div>
+      </section>
 
-        {/* Main Headlines - Traditional Newspaper Layout */}
-        <div className="grid grid-cols-12 gap-4 mb-6">
-          {/* Lead Story - Takes up 8 columns */}
-          <div className="col-span-12 md:col-span-8 border border-gray-300 p-4">
-            <div className="mb-3">
-              <span className="bg-red-600 text-white px-2 py-1 text-xs font-bold uppercase tracking-wide">Exclusive</span>
-            </div>
-            <h2 className="text-2xl md:text-3xl font-bold text-black mb-3 leading-tight">
-              DALLAS TECH STARTUP REVOLUTIONIZES SERVER DEPLOYMENT WITH 60-SECOND LAUNCH TIMES
-            </h2>
-            <div className="flex items-center mb-3 text-xs text-gray-600 border-b border-gray-200 pb-2">
-               <span className="mr-4 font-semibold">By John &quot;Rusty&quot; Serverman</span>
-              <span className="mr-4">•</span>
-              <span>{new Date().toLocaleDateString()}</span>
-            </div>
-            <div className="grid md:grid-cols-2 gap-4">
-              <div>
-                <p className="text-sm text-gray-800 leading-relaxed mb-3">
-                  In a move that has sent shockwaves through the cloud computing industry, OldWestSolutions has announced 
-                  a breakthrough in server deployment technology that reduces launch times from industry-standard 5-10 minutes 
-                  to an unprecedented 60 seconds.
-                </p>
-                <p className="text-sm text-gray-800 leading-relaxed mb-3">
-                  &quot;We&apos;re not just deploying servers, we&apos;re deploying dreams,&quot; said CEO Sarah &quot;Lightning&quot; Cloud, speaking 
-                  from the company&apos;s Dallas headquarters. &quot;When a developer has an idea at 2 AM, they shouldn&apos;t have to 
-                  wait until sunrise to see it come to life.&quot;
-                </p>
+      {/* News Section */}
+      <section className="py-20 px-4 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-12 text-white">Latest News & Updates</h2>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="bg-[#2a2a2a] rounded-xl p-8 border border-red-500/20">
+              <div className="w-16 h-16 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+                </svg>
               </div>
-              <div>
-                <p className="text-sm text-gray-800 leading-relaxed mb-3">
-                  The technology, dubbed "Lightning Deploy," uses advanced containerization and pre-configured templates 
-                  to achieve these remarkable speeds. Industry experts are calling it a game-changer for startups and 
-                  enterprise clients alike.
-                </p>
-                <p className="text-sm text-gray-800 leading-relaxed">
-                  The announcement comes as OldWestSolutions prepares to expand its Dallas operations, with plans to 
-                  hire 200 additional engineers over the next year.
-                </p>
+              <h3 className="text-xl font-bold text-white mb-4">Company Updates</h3>
+              <p className="text-gray-400 mb-4">
+                Latest announcements, product launches, and company milestones.
+              </p>
+              <p className="text-gray-500 text-sm">Published: {new Date().toLocaleDateString()}</p>
+            </div>
+
+            <div className="bg-[#2a2a2a] rounded-xl p-8 border border-red-500/20">
+              <div className="w-16 h-16 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Industry Insights</h3>
+              <p className="text-gray-400 mb-4">
+                Expert analysis and trends in residential services, remodeling, and technology.
+              </p>
+              <p className="text-gray-500 text-sm">Published: {new Date().toLocaleDateString()}</p>
+            </div>
+
+            <div className="bg-[#2a2a2a] rounded-xl p-8 border border-red-500/20">
+              <div className="w-16 h-16 bg-red-500/20 rounded-lg flex items-center justify-center mb-6">
+                <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+              </div>
+              <h3 className="text-xl font-bold text-white mb-4">Customer Stories</h3>
+              <p className="text-gray-400 mb-4">
+                Success stories and testimonials from our satisfied customers.
+              </p>
+              <p className="text-gray-500 text-sm">Published: {new Date().toLocaleDateString()}</p>
+            </div>
+          </div>
+
+          <div className="bg-[#2a2a2a] rounded-2xl p-12 border border-red-500/20">
+            <h3 className="text-3xl font-bold text-white mb-6 text-center">Stay Connected</h3>
+            <p className="text-gray-300 text-center mb-8">
+              Subscribe to our newsletter to receive the latest updates and news directly in your inbox.
+            </p>
+            <div className="max-w-md mx-auto">
+              <div className="flex gap-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="flex-1 px-4 py-3 bg-[#1a1a1a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-red-500"
+                />
+                <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                  Subscribe
+                </button>
               </div>
             </div>
-            <div className="mt-3 text-xs text-gray-500 italic border-t border-gray-200 pt-2">
-              CONTINUED ON PAGE 3
-            </div>
-          </div>
-
-          {/* Side Stories - Takes up 4 columns */}
-          <div className="col-span-12 md:col-span-4 space-y-4">
-            <div className="border border-gray-300 p-3">
-              <h3 className="text-lg font-bold text-black mb-2 leading-tight">
-                GPU PRICES PLUMMET AS AI BOOM CONTINUES
-              </h3>
-              <div className="text-xs text-gray-600 mb-2">By Tech Reporter</div>
-              <p className="text-sm text-gray-800 leading-relaxed">
-                NVIDIA RTX 4000 series now available at OldWestSolutions for $350/month, down from $450. 
-                The price drop comes as demand for AI computing resources reaches new heights...
-              </p>
-            </div>
-            
-            <div className="border border-gray-300 p-3">
-              <h3 className="text-lg font-bold text-black mb-2 leading-tight">
-                CYBERSECURITY EXPERT WARNS OF "DIGITAL OUTLAWS"
-              </h3>
-              <div className="text-xs text-gray-600 mb-2">By Security Correspondent</div>
-              <p className="text-sm text-gray-800 leading-relaxed">
-                "Fortress-level security isn't optional anymore," says Chief Security Officer Maria Rodriguez. 
-                "The digital frontier has its share of outlaws, and we're the sheriffs..."
-              </p>
-            </div>
-
-            <div className="border border-gray-300 p-3">
-              <h3 className="text-lg font-bold text-black mb-2 leading-tight">
-                STORAGE CAPACITY REACHES NEW FRONTIERS
-              </h3>
-              <div className="text-xs text-gray-600 mb-2">By Infrastructure Reporter</div>
-              <p className="text-sm text-gray-800 leading-relaxed">
-                Petabyte-scale storage solutions now available for enterprise clients. 
-                The new offering represents a 500% increase in available capacity...
-              </p>
-            </div>
           </div>
         </div>
+      </section>
 
-        {/* Secondary Stories Row */}
-        <div className="grid grid-cols-12 gap-4 mb-6">
-          <div className="col-span-12 md:col-span-6 border border-gray-300 p-4">
-            <h3 className="text-xl font-bold text-black mb-3 leading-tight">
-              DALLAS TECH SCENE BOOMS WITH INFRASTRUCTURE INNOVATION
-            </h3>
-            <div className="flex items-center mb-3 text-xs text-gray-600 border-b border-gray-200 pb-2">
-              <span className="mr-4 font-semibold">By Maria &quot;Data&quot; Johnson</span>
-              <span className="mr-4">•</span>
-              <span>{new Date().toLocaleDateString()}</span>
+      {/* Footer */}
+      <footer className="w-full bg-[#1a1a1a] text-gray-400 py-12 px-4 border-t border-[#333]">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center gap-3 mb-4">
+                <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8" />
+                <h3 className="text-white text-lg font-bold">OldWestSolutions</h3>
+              </div>
+              <p className="text-sm">Professional services for your home and code.</p>
             </div>
-            <p className="text-sm text-gray-800 leading-relaxed mb-3">
-              The Big D has become the epicenter of a new technological revolution, with OldWestSolutions 
-              leading the charge in infrastructure innovation. Local businesses are reporting unprecedented 
-              growth since adopting the company's lightning-fast deployment solutions.
-            </p>
-            <p className="text-sm text-gray-800 leading-relaxed">
-              "Dallas has always been a business-friendly city," said Mayor Eric Johnson. "Now we're becoming 
-              a tech-friendly city too. OldWestSolutions is putting us on the map in ways we never imagined."
-            </p>
-          </div>
-
-          <div className="col-span-12 md:col-span-6 border border-gray-300 p-4">
-            <h3 className="text-xl font-bold text-black mb-3 leading-tight">
-              DEVELOPER TESTIMONIALS: "IT'S LIKE MAGIC"
-            </h3>
-            <div className="flex items-center mb-3 text-xs text-gray-600 border-b border-gray-200 pb-2">
-              <span className="mr-4 font-semibold">By Tech Reporter</span>
-              <span className="mr-4">•</span>
-              <span>{new Date().toLocaleDateString()}</span>
+            <div>
+              <h4 className="text-white text-lg font-bold mb-4">Services</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/residential" className="hover:text-white transition-colors">Residential</Link></li>
+                <li><Link href="/remodeling" className="hover:text-white transition-colors">Remodeling</Link></li>
+                <li><Link href="/repository" className="hover:text-white transition-colors">Repository</Link></li>
+                <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
+              </ul>
             </div>
-            <p className="text-sm text-gray-800 leading-relaxed mb-3">
-              "I've been deploying servers for 15 years, and I've never seen anything like this," said 
-              veteran developer Mike &quot;Code&quot; Rodriguez. "One minute I'm clicking deploy, the next minute 
-              my application is live. It's like watching a digital frontier unfold before your eyes."
-            </p>
-            <p className="text-sm text-gray-800 leading-relaxed">
-              Other developers echo Rodriguez's sentiment, with many reporting 90% reduction in deployment 
-              time and significantly improved productivity.
-            </p>
-          </div>
-        </div>
-
-        {/* Classified Ads Section */}
-        <div className="border-t-2 border-black pt-4 mb-6">
-          <h2 className="text-2xl font-bold text-black mb-4 text-center uppercase tracking-wide">Classified Advertisements</h2>
-          <div className="grid grid-cols-12 gap-4">
-            <div className="col-span-12 md:col-span-4 border border-gray-300 p-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">WANTED: CLOUD ARCHITECTS</h4>
-              <p className="text-xs text-gray-800 leading-relaxed">
-                Seeking experienced cloud architects to join our growing team. 
-                Must have experience with lightning-fast deployments. 
-                Competitive salary and benefits. 
-                Contact: careers@oldwestsolutions.com
-              </p>
+            <div>
+              <h4 className="text-white text-lg font-bold mb-4">Company</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
+                <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
+                <li><Link href="/documents" className="hover:text-white transition-colors">Documents</Link></li>
+              </ul>
             </div>
-            
-            <div className="col-span-12 md:col-span-4 border border-gray-300 p-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">FOR SALE: VPS SERVERS</h4>
-              <p className="text-xs text-gray-800 leading-relaxed">
-                High-performance VPS servers available immediately. 
-                Starting at $43/month. No contracts required. 
-                24/7 support included. 
-                Call: 1-800-DEPLOY-NOW
-              </p>
-            </div>
-            
-            <div className="col-span-12 md:col-span-4 border border-gray-300 p-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">LOST & FOUND</h4>
-              <p className="text-xs text-gray-800 leading-relaxed">
-                Found: One misplaced database query. 
-                Owner can claim at our Dallas data center. 
-                Reward: 60 seconds of free server time.
-                Contact: lost@oldwestsolutions.com
-              </p>
+            <div>
+              <h4 className="text-white text-lg font-bold mb-4">Support</h4>
+              <ul className="space-y-2 text-sm">
+                <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
+                <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
+                <li><Link href="/legal" className="hover:text-white transition-colors">Legal</Link></li>
+                <li><Link href="/help-desk" className="hover:text-white transition-colors">Help Desk</Link></li>
+              </ul>
             </div>
           </div>
-        </div>
-
-        {/* Weather Section */}
-        <div className="border border-gray-300 p-4 mb-6">
-          <h3 className="text-xl font-bold text-black mb-4 text-center uppercase tracking-wide">Digital Weather Report</h3>
-          <div className="grid grid-cols-12 gap-4 text-center">
-            <div className="col-span-6 md:col-span-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">Server Uptime</h4>
-              <p className="text-green-600 text-xl font-bold">99.9%</p>
-              <p className="text-gray-700 text-xs">Sunny with zero downtime</p>
+          <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+              <span>|</span>
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <span>|</span>
+              <Link href="/cookie" className="hover:text-white transition-colors">Cookie Policy</Link>
             </div>
-            <div className="col-span-6 md:col-span-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">Deployment Speed</h4>
-              <p className="text-blue-600 text-xl font-bold">60s</p>
-              <p className="text-gray-700 text-xs">Lightning fast</p>
-            </div>
-            <div className="col-span-6 md:col-span-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">Security Level</h4>
-              <p className="text-red-600 text-xl font-bold">Fortress</p>
-              <p className="text-gray-700 text-xs">Impenetrable</p>
-            </div>
-            <div className="col-span-6 md:col-span-3">
-              <h4 className="font-bold text-black mb-2 text-sm uppercase">Customer Satisfaction</h4>
-              <p className="text-yellow-600 text-xl font-bold">5★</p>
-              <p className="text-gray-700 text-xs">Outstanding</p>
-            </div>
+            <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
           </div>
-        </div>
-
-      </main>
-
-      {/* Minimal Footer */}
-      <footer className="w-full bg-gray-100 text-gray-600 mt-8 border-t border-gray-300">
-        <div className="max-w-6xl mx-auto py-8 px-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
         </div>
       </footer>
-
     </div>
   );
 }
