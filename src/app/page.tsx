@@ -390,26 +390,11 @@ export default function Home() {
                 Professional remodeling services with expert craftsmanship and premium materials for your home transformation
               </p>
               
-              {/* Remodeling Illustration */}
+              {/* Remodeling Image */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-yellow-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  {/* Home Remodeling Visual */}
-                  <div className="relative w-64 h-48 mb-6">
-                    {/* House Structure */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-32 bg-gradient-to-b from-yellow-600/80 to-yellow-700/80 rounded-t-lg border-2 border-yellow-400/50">
-                      {/* Windows */}
-                      <div className="absolute left-6 top-6 w-8 h-8 bg-yellow-300/40 rounded border border-yellow-400/50"></div>
-                      <div className="absolute right-6 top-6 w-8 h-8 bg-yellow-300/40 rounded border border-yellow-400/50"></div>
-                      {/* Door */}
-                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-16 bg-yellow-800/80 rounded-t border-2 border-yellow-400/50"></div>
-                    </div>
-                    {/* Tools Icon */}
-                    <div className="absolute top-4 right-4 w-16 h-16 bg-yellow-500/20 rounded-full border-2 border-yellow-400/50 flex items-center justify-center backdrop-blur-sm">
-                      <svg className="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                    </div>
+                  <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
+                    <img src="/remodel.jpg" alt="Expert Craftsmanship" className="w-full h-full object-cover" />
                   </div>
                   <p className="text-yellow-400 font-semibold text-lg mb-2">Expert Craftsmanship</p>
                   <p className="text-gray-400 text-sm text-center">Professional remodeling and renovation services</p>
