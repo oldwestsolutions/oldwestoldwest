@@ -683,9 +683,9 @@ export default function Home() {
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/" className="hover:text-white transition-colors">Roofing</Link></li>
-                <li><Link href="/" className="hover:text-white transition-colors">Solar</Link></li>
-                <li><Link href="/" className="hover:text-white transition-colors">Pull Requests</Link></li>
+                <li><Link href="/roofing" className="hover:text-white transition-colors">Roofing</Link></li>
+                <li><Link href="/solar" className="hover:text-white transition-colors">Solar</Link></li>
+                <li><Link href="/pull-requests" className="hover:text-white transition-colors">Pull Requests</Link></li>
               </ul>
             </div>
             <div>
