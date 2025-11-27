@@ -1,7 +1,32 @@
+'use client';
+
 import Link from 'next/link';
 import Header from './components/Header';
+import { useState } from 'react';
 
 export default function Home() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission here
+    console.log('Form submitted:', formData);
+    setIsModalOpen(false);
+    setFormData({ name: '', email: '', message: '' });
+    alert('Thank you for contacting us! We will get back to you soon.');
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white" style={{fontFamily: 'Georgia, serif'}}>
       <Header />
@@ -86,39 +111,11 @@ export default function Home() {
           {/* Right Column - Visual */}
           <div className="relative">
             <div className="relative w-full h-[500px] rounded-2xl overflow-hidden">
-              {/* Abstract visual composition */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#2a2a2a] via-[#1a1a1a] to-[#2a2a2a] rounded-2xl"></div>
-              
-              {/* Floating service icons */}
-              <div className="absolute top-10 left-10 w-24 h-24 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-12 hover:rotate-0 transition-transform duration-500">
-                <svg className="w-12 h-12 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
-              </div>
-              
-              <div className="absolute top-32 right-16 w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center shadow-2xl transform -rotate-12 hover:rotate-0 transition-transform duration-500" style={{animationDelay: '0.2s'}}>
-                <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-              </div>
-              
-              <div className="absolute bottom-20 left-16 w-28 h-28 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center shadow-2xl transform rotate-6 hover:rotate-0 transition-transform duration-500" style={{animationDelay: '0.4s'}}>
-                <svg className="w-14 h-14 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
-              </div>
-              
-              {/* Connecting lines */}
-              <svg className="absolute inset-0 w-full h-full opacity-20" style={{zIndex: 1}}>
-                <line x1="10%" y1="15%" x2="35%" y2="25%" stroke="currentColor" strokeWidth="2" className="text-orange-500" />
-                <line x1="75%" y1="30%" x2="45%" y2="50%" stroke="currentColor" strokeWidth="2" className="text-yellow-500" />
-                <line x1="25%" y1="60%" x2="20%" y2="75%" stroke="currentColor" strokeWidth="2" className="text-blue-500" />
-              </svg>
-              
-              {/* Glow effects */}
-              <div className="absolute top-10 left-10 w-24 h-24 bg-orange-500/20 rounded-2xl blur-xl animate-pulse"></div>
-              <div className="absolute top-32 right-16 w-20 h-20 bg-yellow-500/20 rounded-2xl blur-xl animate-pulse" style={{animationDelay: '1s'}}></div>
-              <div className="absolute bottom-20 left-16 w-28 h-28 bg-blue-500/20 rounded-2xl blur-xl animate-pulse" style={{animationDelay: '2s'}}></div>
+              <img 
+                src="/global.jpg" 
+                alt="Professional Services" 
+                className="w-full h-full object-cover rounded-2xl"
+              />
             </div>
           </div>
         </div>
@@ -661,6 +658,105 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA Section */}
+      <section className="w-full py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] relative overflow-hidden">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
+            Ready to Get Started?
+          </h2>
+          <p className="text-xl text-gray-300 mb-8">
+            Contact us today to learn more about our services and how we can help you achieve your goals.
+          </p>
+          <button
+            onClick={() => setIsModalOpen(true)}
+            className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
+          >
+            Contact Us
+          </button>
+        </div>
+      </section>
+
+      {/* Contact Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setIsModalOpen(false)}>
+          <div className="bg-[#1a1a1a] rounded-2xl shadow-2xl max-w-2xl w-full p-8 border border-gray-700" onClick={(e) => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-3xl font-bold text-white">Contact Us</h3>
+              <button
+                onClick={() => setIsModalOpen(false)}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+                  Name
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                  placeholder="Your name"
+                />
+              </div>
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  required
+                  className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                  placeholder="your.email@example.com"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500 resize-none"
+                  placeholder="Tell us how we can help..."
+                />
+              </div>
+              <div className="flex gap-4">
+                <button
+                  type="submit"
+                  className="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Send Message
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsModalOpen(false)}
+                  className="px-6 py-3 bg-transparent border-2 border-gray-600 text-gray-300 hover:border-gray-500 hover:text-white rounded-lg font-semibold transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
       {/* Footer */}
       <footer className="w-full bg-[#1a1a1a] text-gray-400 py-12 px-4 border-t border-[#333]">
         <div className="max-w-6xl mx-auto">
@@ -673,13 +769,14 @@ export default function Home() {
               <h4 className="text-white text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/pull-requests" className="hover:text-white transition-colors">Pull Requests</Link></li>
-                <li><Link href="/solar" className="hover:text-white transition-colors">Solar</Link></li>
                 <li><Link href="/roofing" className="hover:text-white transition-colors">Roofing</Link></li>
+                <li><Link href="/solar" className="hover:text-white transition-colors">Solar</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
+                <li><Link href="/hosting" className="hover:text-white transition-colors">Hosting</Link></li>
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
                 <li><Link href="/install" className="hover:text-white transition-colors">Install</Link></li>
               </ul>
@@ -688,7 +785,7 @@ export default function Home() {
               <h4 className="text-white text-lg font-bold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-                <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
+                <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
               </ul>
             </div>
           </div>
