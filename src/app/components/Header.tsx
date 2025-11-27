@@ -40,11 +40,11 @@ export default function Header() {
           OldWestSolutions
         </Link>
       </div>
-      <div className="flex items-center gap-4">
-        <Link href="/contact" className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-6 py-2 rounded-full font-semibold transition-colors">
+      <div className="flex items-center gap-2 md:gap-4">
+        <Link href="/contact" className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-3 py-1.5 md:px-6 md:py-2 rounded-full text-sm md:text-base font-semibold transition-colors">
           Contact Us
         </Link>
-        <Link href="/login" className="bg-ms-gray-70 text-white px-6 py-2 rounded-full font-semibold hover:bg-ms-gray-80 transition-colors">
+        <Link href="/login" className="bg-ms-gray-70 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-full text-sm md:text-base font-semibold hover:bg-ms-gray-80 transition-colors">
           Login
         </Link>
       </div>
