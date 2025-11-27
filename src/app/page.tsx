@@ -6,10 +6,18 @@ import { useState } from 'react';
 
 export default function Home() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isQuoteModalOpen, setIsQuoteModalOpen] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
+  });
+  const [quoteData, setQuoteData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    serviceType: '',
+    projectDetails: ''
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -21,9 +29,25 @@ export default function Home() {
     alert('Thank you for contacting us! We will get back to you soon.');
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleQuoteSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle quote form submission here
+    console.log('Quote request submitted:', quoteData);
+    setIsQuoteModalOpen(false);
+    setQuoteData({ name: '', email: '', phone: '', serviceType: '', projectDetails: '' });
+    alert('Thank you for your quote request! Our team will review your information and contact you shortly.');
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({
       ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleQuoteChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+    setQuoteData({
+      ...quoteData,
       [e.target.name]: e.target.value
     });
   };
@@ -54,7 +78,7 @@ export default function Home() {
                 Professional Services
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-4">
-                Comprehensive solutions for your property and development needs. From expert roofing installations and solar energy systems to professional pull request management—we deliver excellence across every service.
+                Comprehensive solutions for your residential and repository needs. From interior home services and remodeling to repository management and version control—we deliver excellence across every service.
               </p>
               <div className="flex items-center gap-4 text-sm text-gray-400 mt-6">
                 <div className="flex items-center gap-2">
@@ -79,31 +103,22 @@ export default function Home() {
             </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
-                href="/roofing"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
+                href="/learn-more"
+                className="inline-flex items-center justify-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
-                Roofing
+                Residential
               </Link>
               <Link
-                href="/solar"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
-              >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-                Solar
-              </Link>
-              <Link
-                href="/pull-requests"
-                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
+                href="/learn-more"
+                className="inline-flex items-center justify-center gap-2 bg-gray-600 hover:bg-gray-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
-                Pull Requests
+                Repository
               </Link>
             </div>
           </div>
@@ -121,17 +136,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Roofing Section - Full Page */}
+      {/* Interior Residential Services Section - Full Page */}
       <section id="roofing" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
           {/* Left Side - Visual Card */}
           <div className="relative">
             <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-orange-500/20">
               <h2 className="text-3xl font-bold text-orange-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                Professional Roofing Services
+                Interior Residential Services
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Expert installation and protection for your home with our verified contractor network and quality materials
+                Comprehensive interior home services including roofing, flooring, solar, remodeling, and more with our verified contractor network
               </p>
               
               {/* House Illustration */}
@@ -226,10 +241,10 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-                Professional Roofing Services
+                Interior Residential Services
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Protect your most valuable investment with our comprehensive roofing solutions. Expert installation, quality materials, and verified contractors ensure maximum protection for your home.
+                Transform your home with our comprehensive interior residential services. From expert roofing installations and premium flooring to solar energy systems and complete remodeling projects—we deliver excellence across every aspect of your home.
               </p>
             </div>
             
@@ -237,53 +252,53 @@ export default function Home() {
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Expert Installation</p>
-                <p className="text-gray-400 text-sm">Licensed & verified</p>
+                <p className="text-white font-semibold mb-2">Roofing</p>
+                <p className="text-gray-400 text-sm">Expert installation</p>
               </div>
               
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">24/7 Support</p>
-                <p className="text-gray-400 text-sm">Always available</p>
+                <p className="text-white font-semibold mb-2">Flooring</p>
+                <p className="text-gray-400 text-sm">Premium materials</p>
               </div>
               
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Secure Payments</p>
-                <p className="text-gray-400 text-sm">Protected transactions</p>
+                <p className="text-white font-semibold mb-2">Solar</p>
+                <p className="text-gray-400 text-sm">Energy solutions</p>
               </div>
               
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-orange-500/20">
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Quality Materials</p>
-                <p className="text-gray-400 text-sm">Premium selection</p>
+                <p className="text-white font-semibold mb-2">Remodeling</p>
+                <p className="text-gray-400 text-sm">Complete transformations</p>
               </div>
             </div>
             
             <div className="flex gap-4">
-              <Link
-                href="/pricing"
+              <button
+                onClick={() => setIsQuoteModalOpen(true)}
                 className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Get Quote
-              </Link>
+              </button>
               <Link
-                href="/contact"
+                href="/learn-more"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
@@ -293,17 +308,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Solar Section - Full Page */}
+      {/* Remodeling Section - Full Page */}
       <section id="solar" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
           {/* Left Side - Content */}
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-                Solar Energy Solutions
+                Remodeling Contracting Services
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Harness the power of the sun with our state-of-the-art solar installations. Reduce your carbon footprint while saving on energy costs with our comprehensive solar solutions.
+                Transform your space with our expert remodeling contracting services. From kitchen and bathroom renovations to complete home makeovers, we bring your vision to life with quality craftsmanship and attention to detail.
               </p>
             </div>
             
@@ -350,14 +365,14 @@ export default function Home() {
             </div>
             
             <div className="flex gap-4">
-              <Link
-                href="/pricing"
+              <button
+                onClick={() => setIsQuoteModalOpen(true)}
                 className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Get Quote
-              </Link>
+              </button>
               <Link
-                href="/contact"
+                href="/learn-more"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
@@ -369,63 +384,35 @@ export default function Home() {
           <div className="relative">
             <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-yellow-500/20">
               <h2 className="text-3xl font-bold text-yellow-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                Solar Efficiency System
+                Remodeling Excellence
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Premium solar panel installations with maximum efficiency and smart monitoring systems
+                Professional remodeling services with expert craftsmanship and premium materials for your home transformation
               </p>
               
-              {/* Solar Panel Illustration */}
+              {/* Remodeling Illustration */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-yellow-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  {/* Solar Panel Array */}
+                  {/* Home Remodeling Visual */}
                   <div className="relative w-64 h-48 mb-6">
-                    {/* Sun */}
-                    <div className="absolute top-0 right-8 w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full shadow-2xl animate-pulse">
-                      <div className="absolute inset-2 bg-yellow-300 rounded-full"></div>
-                      {/* Sun Rays */}
-                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-yellow-400 rounded"></div>
-                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-yellow-400 rounded"></div>
-                      <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-yellow-400 rounded"></div>
-                      <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-yellow-400 rounded"></div>
+                    {/* House Structure */}
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-32 bg-gradient-to-b from-yellow-600/80 to-yellow-700/80 rounded-t-lg border-2 border-yellow-400/50">
+                      {/* Windows */}
+                      <div className="absolute left-6 top-6 w-8 h-8 bg-yellow-300/40 rounded border border-yellow-400/50"></div>
+                      <div className="absolute right-6 top-6 w-8 h-8 bg-yellow-300/40 rounded border border-yellow-400/50"></div>
+                      {/* Door */}
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-16 bg-yellow-800/80 rounded-t border-2 border-yellow-400/50"></div>
                     </div>
-                    
-                    {/* Solar Panels */}
-                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-2">
-                      {/* Panel 1 */}
-                      <div className="w-20 h-24 bg-gradient-to-b from-gray-700 to-gray-800 rounded border-2 border-yellow-500/30 shadow-lg">
-                        <div className="grid grid-cols-4 gap-1 p-2">
-                          {[...Array(8)].map((_, i) => (
-                            <div key={i} className="h-2 bg-yellow-400/20 rounded"></div>
-                          ))}
-                        </div>
-                      </div>
-                      {/* Panel 2 */}
-                      <div className="w-20 h-24 bg-gradient-to-b from-gray-700 to-gray-800 rounded border-2 border-yellow-500/30 shadow-lg">
-                        <div className="grid grid-cols-4 gap-1 p-2">
-                          {[...Array(8)].map((_, i) => (
-                            <div key={i} className="h-2 bg-yellow-400/20 rounded"></div>
-                          ))}
-                        </div>
-                      </div>
-                      {/* Panel 3 */}
-                      <div className="w-20 h-24 bg-gradient-to-b from-gray-700 to-gray-800 rounded border-2 border-yellow-500/30 shadow-lg">
-                        <div className="grid grid-cols-4 gap-1 p-2">
-                          {[...Array(8)].map((_, i) => (
-                            <div key={i} className="h-2 bg-yellow-400/20 rounded"></div>
-                          ))}
-                        </div>
-                      </div>
+                    {/* Tools Icon */}
+                    <div className="absolute top-4 right-4 w-16 h-16 bg-yellow-500/20 rounded-full border-2 border-yellow-400/50 flex items-center justify-center backdrop-blur-sm">
+                      <svg className="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
                     </div>
-                    
-                    {/* Energy Flow Lines */}
-                    <svg className="absolute inset-0 w-full h-full opacity-30">
-                      <path d="M 200 80 Q 150 60 100 100" stroke="#eab308" strokeWidth="2" fill="none" strokeDasharray="4,4" />
-                      <path d="M 200 100 Q 150 80 100 120" stroke="#eab308" strokeWidth="2" fill="none" strokeDasharray="4,4" />
-                    </svg>
                   </div>
-                  <p className="text-yellow-400 font-semibold text-lg mb-2">Premium Efficiency</p>
-                  <p className="text-gray-400 text-sm text-center">Industry-leading solar panel technology</p>
+                  <p className="text-yellow-400 font-semibold text-lg mb-2">Expert Craftsmanship</p>
+                  <p className="text-gray-400 text-sm text-center">Professional remodeling and renovation services</p>
                 </div>
               </div>
               
@@ -438,20 +425,20 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Verified Installers</p>
-                    <p className="text-gray-400 text-sm">Certified solar professionals</p>
+                    <p className="text-white font-medium">Verified Contractors</p>
+                    <p className="text-gray-400 text-sm">Licensed remodeling professionals</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-yellow-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Efficiency Rating</p>
-                    <p className="text-gray-400 text-sm">Industry-leading performance</p>
+                    <p className="text-white font-medium">Quality Guarantee</p>
+                    <p className="text-gray-400 text-sm">Satisfaction assured</p>
                   </div>
                 </div>
                 
@@ -462,8 +449,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">System Reviews</p>
-                    <p className="text-gray-400 text-sm">Share your solar experience</p>
+                    <p className="text-white font-medium">Project Reviews</p>
+                    <p className="text-gray-400 text-sm">Share your remodeling experience</p>
                   </div>
                 </div>
               </div>
@@ -479,10 +466,10 @@ export default function Home() {
           <div className="relative">
             <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-blue-500/20">
               <h2 className="text-3xl font-bold text-blue-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                Pull Request Management System
+                Repository Services
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Professional code review and workflow optimization with our verified developer network
+                Comprehensive repository management including pull/merge requests, issues, and version control with our verified developer network
               </p>
               
               {/* Git Branch Illustration */}
@@ -541,8 +528,8 @@ export default function Home() {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-blue-400 font-semibold text-lg mb-2">Enterprise Quality</p>
-                  <p className="text-gray-400 text-sm text-center">Professional code review and merge management</p>
+                  <p className="text-blue-400 font-semibold text-lg mb-2">Repository Management</p>
+                  <p className="text-gray-400 text-sm text-center">Pull/merge requests, issues, and version control</p>
                 </div>
               </div>
               
@@ -555,32 +542,32 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Code Review</p>
-                    <p className="text-gray-400 text-sm">Thorough quality assurance</p>
+                    <p className="text-white font-medium">Pull/Merge Requests</p>
+                    <p className="text-gray-400 text-sm">Professional code review</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Verified Developers</p>
-                    <p className="text-gray-400 text-sm">ID & background checked</p>
+                    <p className="text-white font-medium">Issues Management</p>
+                    <p className="text-gray-400 text-sm">Track and resolve issues</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                     </svg>
                   </div>
                   <div>
-                    <p className="text-white font-medium">Review System</p>
-                    <p className="text-gray-400 text-sm">Rate your code reviews</p>
+                    <p className="text-white font-medium">Version Control</p>
+                    <p className="text-gray-400 text-sm">Git workflow management</p>
                   </div>
                 </div>
               </div>
@@ -591,10 +578,10 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-                Pull Request Management
+                Repository Services
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Streamline your development workflow with our expert pull request services. We help teams maintain code quality, resolve conflicts, and optimize their Git workflows for maximum productivity.
+                Manage your codebase with our comprehensive repository services. From pull and merge requests to issue tracking and version control, we provide the tools and expertise to streamline your development workflow.
               </p>
             </div>
             
@@ -602,21 +589,31 @@ export default function Home() {
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">CI/CD Integration</p>
-                <p className="text-gray-400 text-sm">Automated pipelines</p>
+                <p className="text-white font-semibold mb-2">Pull/Merge Requests</p>
+                <p className="text-gray-400 text-sm">Code review & merging</p>
               </div>
               
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Merge Management</p>
-                <p className="text-gray-400 text-sm">Conflict resolution</p>
+                <p className="text-white font-semibold mb-2">Issues</p>
+                <p className="text-gray-400 text-sm">Track & manage issues</p>
+              </div>
+              
+              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
+                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
+                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                  </svg>
+                </div>
+                <p className="text-white font-semibold mb-2">Version Control</p>
+                <p className="text-gray-400 text-sm">Git workflow management</p>
               </div>
               
               <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
@@ -625,30 +622,20 @@ export default function Home() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
-                <p className="text-white font-semibold mb-2">Secure Workflows</p>
-                <p className="text-gray-400 text-sm">Protected processes</p>
-              </div>
-              
-              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
-                <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
-                  <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                  </svg>
-                </div>
-                <p className="text-white font-semibold mb-2">Workflow Optimization</p>
-                <p className="text-gray-400 text-sm">Custom solutions</p>
+                <p className="text-white font-semibold mb-2">Secure Repositories</p>
+                <p className="text-gray-400 text-sm">Protected codebases</p>
               </div>
             </div>
             
             <div className="flex gap-4">
-              <Link
-                href="/pricing"
+              <button
+                onClick={() => setIsQuoteModalOpen(true)}
                 className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Get Started
-              </Link>
+              </button>
               <Link
-                href="/contact"
+                href="/learn-more"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
@@ -659,20 +646,73 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] relative overflow-hidden">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-            Ready to Get Started?
-          </h2>
-          <p className="text-xl text-gray-300 mb-8">
-            Contact us today to learn more about our services and how we can help you achieve your goals.
-          </p>
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
-          >
-            Contact Us
-          </button>
+      <section className="w-full py-24 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-20 left-10 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
+        </div>
+        
+        <div className="max-w-5xl mx-auto text-center relative z-10">
+          <div className="mb-8">
+            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-full mb-6">
+              <svg className="w-10 h-10 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
+              Ready to Transform Your Space?
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto">
+              Join thousands of satisfied customers who trust OldWestSolutions for their residential and repository needs.
+            </p>
+            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+              Our team of licensed professionals is ready to bring your vision to life. Get a free, no-obligation quote today and discover why we're the trusted choice for quality service.
+            </p>
+          </div>
+          
+          {/* Trust indicators */}
+          <div className="flex flex-wrap items-center justify-center gap-8 mb-10 text-gray-400">
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-sm font-medium">Licensed & Insured</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-sm font-medium">10+ Years Experience</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-sm font-medium">100% Satisfaction Guarantee</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span className="text-sm font-medium">Free Consultations</span>
+            </div>
+          </div>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <button
+              onClick={() => setIsQuoteModalOpen(true)}
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl"
+            >
+              Get Your Free Quote
+            </button>
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="bg-transparent border-2 border-white/30 hover:border-white/50 text-white px-10 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
+            >
+              Contact Our Team
+            </button>
+          </div>
         </div>
       </section>
 
@@ -747,6 +787,123 @@ export default function Home() {
                 <button
                   type="button"
                   onClick={() => setIsModalOpen(false)}
+                  className="px-6 py-3 bg-transparent border-2 border-gray-600 text-gray-300 hover:border-gray-500 hover:text-white rounded-lg font-semibold transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+      {/* Get Quote Modal */}
+      {isQuoteModalOpen && (
+        <div className="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 flex items-center justify-center p-4" onClick={() => setIsQuoteModalOpen(false)}>
+          <div className="bg-[#1a1a1a] rounded-2xl shadow-2xl max-w-2xl w-full p-8 border border-gray-700" onClick={(e) => e.stopPropagation()}>
+            <div className="flex justify-between items-center mb-6">
+              <h3 className="text-3xl font-bold text-white">Request a Quote</h3>
+              <button
+                onClick={() => setIsQuoteModalOpen(false)}
+                className="text-gray-400 hover:text-white transition-colors"
+              >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <form onSubmit={handleQuoteSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="quote-name" className="block text-sm font-medium text-gray-300 mb-2">
+                  Full Name *
+                </label>
+                <input
+                  type="text"
+                  id="quote-name"
+                  name="name"
+                  value={quoteData.name}
+                  onChange={handleQuoteChange}
+                  required
+                  className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="quote-email" className="block text-sm font-medium text-gray-300 mb-2">
+                    Email Address *
+                  </label>
+                  <input
+                    type="email"
+                    id="quote-email"
+                    name="email"
+                    value={quoteData.email}
+                    onChange={handleQuoteChange}
+                    required
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                    placeholder="john@example.com"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="quote-phone" className="block text-sm font-medium text-gray-300 mb-2">
+                    Phone Number *
+                  </label>
+                  <input
+                    type="tel"
+                    id="quote-phone"
+                    name="phone"
+                    value={quoteData.phone}
+                    onChange={handleQuoteChange}
+                    required
+                    className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                    placeholder="(555) 123-4567"
+                  />
+                </div>
+              </div>
+              <div>
+                <label htmlFor="quote-service" className="block text-sm font-medium text-gray-300 mb-2">
+                  Service Type *
+                </label>
+                <select
+                  id="quote-service"
+                  name="serviceType"
+                  value={quoteData.serviceType}
+                  onChange={handleQuoteChange}
+                  required
+                  className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500"
+                >
+                  <option value="">Select a service</option>
+                  <option value="interior-residential">Interior Residential Services</option>
+                  <option value="remodeling">Remodeling Contracting</option>
+                  <option value="repository">Repository Services</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div>
+                <label htmlFor="quote-details" className="block text-sm font-medium text-gray-300 mb-2">
+                  Project Details *
+                </label>
+                <textarea
+                  id="quote-details"
+                  name="projectDetails"
+                  value={quoteData.projectDetails}
+                  onChange={handleQuoteChange}
+                  required
+                  rows={6}
+                  className="w-full px-4 py-3 bg-[#2a2a2a] border border-gray-600 rounded-lg text-white focus:outline-none focus:border-orange-500 resize-none"
+                  placeholder="Please describe your project, timeline, and any specific requirements..."
+                />
+              </div>
+              <div className="flex gap-4">
+                <button
+                  type="submit"
+                  className="flex-1 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                >
+                  Submit Quote Request
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setIsQuoteModalOpen(false)}
                   className="px-6 py-3 bg-transparent border-2 border-gray-600 text-gray-300 hover:border-gray-500 hover:text-white rounded-lg font-semibold transition-colors"
                 >
                   Cancel
