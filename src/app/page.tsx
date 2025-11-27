@@ -333,7 +333,7 @@ export default function Home() {
                 <p className="text-gray-400 text-sm">Efficient solutions</p>
               </Link>
               
-              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-yellow-500/20">
+              <Link href="/remodeling/monitoring" className="bg-[#2a2a2a] rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
@@ -341,7 +341,7 @@ export default function Home() {
                 </div>
                 <p className="text-white font-semibold mb-2">Smart Monitoring</p>
                 <p className="text-gray-400 text-sm">Real-time tracking</p>
-              </div>
+              </Link>
               
               <Link href="/remodeling/finishing" className="bg-[#2a2a2a] rounded-xl p-6 border border-yellow-500/20 hover:border-yellow-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-yellow-500/20 rounded-lg flex items-center justify-center mb-4">
@@ -586,7 +586,7 @@ export default function Home() {
             </div>
             
             <div className="grid grid-cols-2 gap-6">
-              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
+              <Link href="/repository/pull-merge-requests" className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20 hover:border-blue-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" />
@@ -594,9 +594,9 @@ export default function Home() {
                 </div>
                 <p className="text-white font-semibold mb-2">Pull/Merge Requests</p>
                 <p className="text-gray-400 text-sm">Code review & merging</p>
-              </div>
+              </Link>
               
-              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
+              <Link href="/repository/issues" className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20 hover:border-blue-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -604,9 +604,9 @@ export default function Home() {
                 </div>
                 <p className="text-white font-semibold mb-2">Issues</p>
                 <p className="text-gray-400 text-sm">Track & manage issues</p>
-              </div>
+              </Link>
               
-              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
+              <Link href="/repository/version-control" className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20 hover:border-blue-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -614,9 +614,9 @@ export default function Home() {
                 </div>
                 <p className="text-white font-semibold mb-2">Version Control</p>
                 <p className="text-gray-400 text-sm">Git workflow management</p>
-              </div>
+              </Link>
               
-              <div className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20">
+              <Link href="/repository/secure" className="bg-[#2a2a2a] rounded-xl p-6 border border-blue-500/20 hover:border-blue-500/50 transition-all transform hover:scale-105 cursor-pointer">
                 <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
@@ -624,7 +624,7 @@ export default function Home() {
                 </div>
                 <p className="text-white font-semibold mb-2">Secure Repositories</p>
                 <p className="text-gray-400 text-sm">Protected codebases</p>
-              </div>
+              </Link>
             </div>
             
             <div className="flex gap-4">
@@ -646,72 +646,90 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full py-24 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
+      <section className="w-full py-20 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl animate-pulse" style={{animationDelay: '1s'}}></div>
         </div>
         
-        <div className="max-w-5xl mx-auto text-center relative z-10">
-          <div className="mb-8">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-full mb-6">
-              <svg className="w-10 h-10 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+        <div className="max-w-7xl mx-auto relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left Column */}
+            <div>
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-orange-500/20 to-orange-600/20 rounded-full mb-6">
+                <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
+                Ready to Transform Your Space?
+              </h2>
+              <p className="text-lg text-gray-300 mb-6 leading-relaxed">
+                Join thousands of satisfied customers who trust OldWestSolutions for their residential and repository needs.
+              </p>
+              <p className="text-base text-gray-400 mb-8">
+                Our team of licensed professionals is ready to bring your vision to life. Get a free, no-obligation quote today and discover why we're the trusted choice for quality service.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row gap-4">
+                <button
+                  onClick={() => setIsQuoteModalOpen(true)}
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl"
+                >
+                  Get Your Free Quote
+                </button>
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="bg-transparent border-2 border-white/30 hover:border-white/50 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
+                >
+                  Contact Our Team
+                </button>
+              </div>
             </div>
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-              Ready to Transform Your Space?
-            </h2>
-            <p className="text-xl md:text-2xl text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto">
-              Join thousands of satisfied customers who trust OldWestSolutions for their residential and repository needs.
-            </p>
-            <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              Our team of licensed professionals is ready to bring your vision to life. Get a free, no-obligation quote today and discover why we're the trusted choice for quality service.
-            </p>
-          </div>
-          
-          {/* Trust indicators */}
-          <div className="flex flex-wrap items-center justify-center gap-8 mb-10 text-gray-400">
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-sm font-medium">Licensed & Insured</span>
+            
+            {/* Right Column */}
+            <div>
+              {/* Trust indicators */}
+              <div className="space-y-6">
+                <div className="flex items-center gap-4 bg-[#1a1a1a]/80 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10">
+                  <svg className="w-8 h-8 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <p className="text-white font-semibold text-lg">Licensed & Insured</p>
+                    <p className="text-gray-400 text-sm">Fully certified and protected</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 bg-[#1a1a1a]/80 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10">
+                  <svg className="w-8 h-8 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <p className="text-white font-semibold text-lg">10+ Years Experience</p>
+                    <p className="text-gray-400 text-sm">Proven track record of excellence</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 bg-[#1a1a1a]/80 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10">
+                  <svg className="w-8 h-8 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <p className="text-white font-semibold text-lg">100% Satisfaction Guarantee</p>
+                    <p className="text-gray-400 text-sm">We stand behind our work</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-4 bg-[#1a1a1a]/80 backdrop-blur-sm px-6 py-4 rounded-xl border border-white/10">
+                  <svg className="w-8 h-8 text-green-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <div>
+                    <p className="text-white font-semibold text-lg">Free Consultations</p>
+                    <p className="text-gray-400 text-sm">No obligation, expert advice</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-sm font-medium">10+ Years Experience</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-sm font-medium">100% Satisfaction Guarantee</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <span className="text-sm font-medium">Free Consultations</span>
-            </div>
-          </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              onClick={() => setIsQuoteModalOpen(true)}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-4 rounded-lg font-semibold text-lg shadow-xl transition-all transform hover:scale-105 hover:shadow-2xl"
-            >
-              Get Your Free Quote
-            </button>
-            <button
-              onClick={() => setIsModalOpen(true)}
-              className="bg-transparent border-2 border-white/30 hover:border-white/50 text-white px-10 py-4 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
-            >
-              Contact Our Team
-            </button>
           </div>
         </div>
       </section>
@@ -919,23 +937,25 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-white text-lg font-bold mb-4">OldWestSolutions</h3>
+              <div className="flex items-center gap-3 mb-4">
+                <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8" />
+                <h3 className="text-white text-lg font-bold">OldWestSolutions</h3>
+              </div>
               <p className="text-sm">Professional services for your home and code. Roofing, solar, and pull request management.</p>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/pull-requests" className="hover:text-white transition-colors">Pull Requests</Link></li>
-                <li><Link href="/roofing" className="hover:text-white transition-colors">Roofing</Link></li>
-                <li><Link href="/solar" className="hover:text-white transition-colors">Solar</Link></li>
+                <li><Link href="/residential" className="hover:text-white transition-colors">Residential</Link></li>
+                <li><Link href="/remodeling" className="hover:text-white transition-colors">Remodeling</Link></li>
+                <li><Link href="/repository" className="hover:text-white transition-colors">Repository</Link></li>
+                <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/hosting" className="hover:text-white transition-colors">Hosting</Link></li>
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                <li><Link href="/install" className="hover:text-white transition-colors">Install</Link></li>
               </ul>
             </div>
             <div>
@@ -943,16 +963,19 @@ export default function Home() {
               <ul className="space-y-2 text-sm">
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
                 <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
+                <li><Link href="/legal" className="hover:text-white transition-colors">Legal</Link></li>
               </ul>
             </div>
           </div>
           <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
+            <div className="flex flex-wrap justify-center gap-4 mb-4">
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
+              <span>|</span>
+              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
+              <span>|</span>
+              <Link href="/cookie" className="hover:text-white transition-colors">Cookie Policy</Link>
+            </div>
             <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
-            <p className="mt-2">
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link> | 
-              <Link href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</Link> | 
-              <Link href="/cookies" className="hover:text-white transition-colors ml-2">Cookie Policy</Link>
-            </p>
           </div>
         </div>
       </footer>
