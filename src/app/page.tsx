@@ -57,36 +57,9 @@ export default function Home() {
 
       {/* Hero Section - Two Column */}
       <section className="min-h-screen flex flex-col items-center justify-center py-20 px-4 bg-[#1a1a1a] relative overflow-hidden pt-32">
-        {/* Professional solar sun background */}
+        {/* Dark dark gray background */}
         <div className="absolute inset-0 overflow-hidden">
-          {/* Dark dark gray base */}
           <div className="absolute inset-0 bg-[#0f0f0f]"></div>
-          {/* Minimal white solar sun */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="relative w-[600px] h-[600px]">
-              {/* Outer glow ring */}
-              <div className="absolute inset-0 rounded-full border-2 border-white/10"></div>
-              {/* Middle ring */}
-              <div className="absolute inset-[100px] rounded-full border border-white/15"></div>
-              {/* Inner core */}
-              <div className="absolute inset-[200px] rounded-full bg-white/5"></div>
-              {/* Sun rays - minimal */}
-              <div className="absolute inset-0">
-                {[...Array(8)].map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute top-1/2 left-1/2 w-1 h-32 bg-white/8 origin-bottom"
-                    style={{
-                      transform: `translate(-50%, -100%) rotate(${i * 45}deg)`,
-                    }}
-                  />
-                ))}
-              </div>
-            </div>
-          </div>
-          {/* Subtle white accent lines */}
-          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
-          <div className="absolute bottom-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/5 to-transparent"></div>
         </div>
         
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">

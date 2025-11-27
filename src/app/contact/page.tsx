@@ -20,7 +20,7 @@ export default function Contact() {
       <section className="w-full py-20 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            Contact <span className="bg-gradient-to-r from-orange-400 to-blue-400 bg-clip-text text-transparent">Us</span>
+            Contact Us
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
             Get in touch with our team. We're here to help with all your service needs.
