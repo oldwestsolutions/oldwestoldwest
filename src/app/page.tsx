@@ -28,31 +28,69 @@ export default function Home() {
         
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
           {/* Left Column - Text */}
-          <div className="space-y-6">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
-              Professional Services for Your{' '}
-              <span className="bg-gradient-to-r from-orange-400 via-yellow-400 to-blue-400 bg-clip-text text-transparent">
-                Home & Code
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-300 leading-relaxed">
-              From protecting your home with expert roofing and solar solutions to streamlining your development workflow with professional pull request management—we've got you covered.
-            </p>
+          <div className="space-y-8">
+            <div>
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
+                Professional Services for Your{' '}
+                <span className="text-black" style={{
+                  WebkitTextStroke: '2px white',
+                  textStroke: '2px white',
+                  textShadow: '0 0 20px rgba(255,255,255,0.3)'
+                }}>
+                  Home & Code
+                </span>
+              </h1>
+              <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-4">
+                Comprehensive solutions for your property and development needs. From expert roofing installations and solar energy systems to professional pull request management—we deliver excellence across every service.
+              </p>
+              <div className="flex items-center gap-4 text-sm text-gray-400 mt-6">
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Licensed Professionals</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Verified Network</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>24/7 Support</span>
+                </div>
+              </div>
+            </div>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link
-                href="/pricing"
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
+                href="#roofing"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
               >
-                Get Started
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
                 </svg>
+                Roofing
               </Link>
               <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-4 rounded-full font-semibold text-lg transition-all"
+                href="#solar"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
               >
-                Learn More
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                Solar
+              </Link>
+              <Link
+                href="#pull-requests"
+                className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg shadow-lg transition-all transform hover:scale-105"
+              >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Pull Requests
               </Link>
             </div>
           </div>
@@ -99,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* Roofing Section - Full Page */}
-      <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
+      <section id="roofing" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
           {/* Left Side - Visual Card */}
           <div className="relative">
@@ -108,31 +146,53 @@ export default function Home() {
                 Professional Roofing Services
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Comprehensive protection rating based on our expert installation system (1-300 scale) and verified contractor network
+                Expert installation and protection for your home with our verified contractor network and quality materials
               </p>
               
-              {/* Score Display */}
+              {/* House Illustration */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-orange-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg mb-4">
-                    <span className="text-5xl font-bold text-white">285</span>
-                  </div>
-                  <p className="text-orange-400 font-semibold text-lg mb-4">Protection Level Score</p>
-                  <div className="w-full bg-orange-500/20 rounded-full px-4 py-2 mb-2">
-                    <span className="text-white font-bold text-sm">MAXIMUM PROTECTION</span>
-                  </div>
-                  <div className="w-full relative">
-                    <div className="w-full h-2 bg-gray-700 rounded-full">
-                      <div className="h-2 bg-gradient-to-r from-orange-500 to-orange-400 rounded-full" style={{width: '95%'}}></div>
+                  {/* House Illustration */}
+                  <div className="relative w-64 h-64 mb-6">
+                    {/* House Base */}
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-48 h-32 bg-gradient-to-b from-orange-600/80 to-orange-700/80 rounded-t-lg border-2 border-orange-400/50">
+                      {/* Windows */}
+                      <div className="absolute left-6 top-6 w-8 h-8 bg-yellow-400/30 rounded border border-yellow-400/50">
+                        <div className="w-full h-full flex items-center justify-center">
+                          <div className="w-3 h-3 bg-yellow-400/50 rounded"></div>
+                        </div>
+                      </div>
+                      <div className="absolute right-6 top-6 w-8 h-8 bg-yellow-400/30 rounded border border-yellow-400/50">
+                        <div className="w-full h-full flex items-center justify-center">
+                          <div className="w-3 h-3 bg-yellow-400/50 rounded"></div>
+                        </div>
+                      </div>
+                      {/* Door */}
+                      <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-12 h-16 bg-orange-800/80 rounded-t border-2 border-orange-400/50">
+                        <div className="absolute right-2 top-1/2 transform -translate-y-1/2 w-2 h-2 bg-orange-400 rounded-full"></div>
+                      </div>
                     </div>
-                    <div className="flex justify-between text-xs text-gray-400 mt-1">
-                      <span>1</span>
-                      <span>300</span>
+                    {/* Roof */}
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2">
+                      <svg width="200" height="120" viewBox="0 0 200 120" className="drop-shadow-2xl">
+                        <polygon points="100,20 40,80 160,80" fill="url(#roofGradient)" stroke="#f97316" strokeWidth="3" />
+                        <defs>
+                          <linearGradient id="roofGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" stopColor="#f97316" stopOpacity="0.9" />
+                            <stop offset="100%" stopColor="#ea580c" stopOpacity="0.9" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-2">
-                      <div className="absolute w-2 h-2 bg-orange-500 rounded-full -top-1" style={{left: '95%'}}></div>
+                    {/* Protection Shield */}
+                    <div className="absolute top-4 right-4 w-16 h-16 bg-orange-500/20 rounded-full border-2 border-orange-400/50 flex items-center justify-center backdrop-blur-sm">
+                      <svg className="w-8 h-8 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                      </svg>
                     </div>
                   </div>
+                  <p className="text-orange-400 font-semibold text-lg mb-2">Maximum Protection</p>
+                  <p className="text-gray-400 text-sm text-center">Weather-resistant materials and expert craftsmanship</p>
                 </div>
               </div>
               
@@ -249,7 +309,7 @@ export default function Home() {
       </section>
 
       {/* Solar Section - Full Page */}
-      <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] relative overflow-hidden">
+      <section id="solar" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
           {/* Left Side - Content */}
           <div className="space-y-8">
@@ -327,31 +387,60 @@ export default function Home() {
                 Solar Efficiency System
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Performance rating based on our installation system (1-300 scale) and verified solar network
+                Premium solar panel installations with maximum efficiency and smart monitoring systems
               </p>
               
-              {/* Score Display */}
+              {/* Solar Panel Illustration */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-yellow-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-lg mb-4">
-                    <span className="text-5xl font-bold text-white">275</span>
-                  </div>
-                  <p className="text-yellow-400 font-semibold text-lg mb-4">Efficiency Rating Score</p>
-                  <div className="w-full bg-yellow-500/20 rounded-full px-4 py-2 mb-2">
-                    <span className="text-white font-bold text-sm">PREMIUM EFFICIENCY</span>
-                  </div>
-                  <div className="w-full relative">
-                    <div className="w-full h-2 bg-gray-700 rounded-full">
-                      <div className="h-2 bg-gradient-to-r from-yellow-500 to-yellow-400 rounded-full" style={{width: '92%'}}></div>
+                  {/* Solar Panel Array */}
+                  <div className="relative w-64 h-48 mb-6">
+                    {/* Sun */}
+                    <div className="absolute top-0 right-8 w-20 h-20 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full shadow-2xl animate-pulse">
+                      <div className="absolute inset-2 bg-yellow-300 rounded-full"></div>
+                      {/* Sun Rays */}
+                      <div className="absolute -top-2 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-yellow-400 rounded"></div>
+                      <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-1 h-4 bg-yellow-400 rounded"></div>
+                      <div className="absolute -left-2 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-yellow-400 rounded"></div>
+                      <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 w-4 h-1 bg-yellow-400 rounded"></div>
                     </div>
-                    <div className="flex justify-between text-xs text-gray-400 mt-1">
-                      <span>1</span>
-                      <span>300</span>
+                    
+                    {/* Solar Panels */}
+                    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 flex gap-2">
+                      {/* Panel 1 */}
+                      <div className="w-20 h-24 bg-gradient-to-b from-gray-700 to-gray-800 rounded border-2 border-yellow-500/30 shadow-lg">
+                        <div className="grid grid-cols-4 gap-1 p-2">
+                          {[...Array(8)].map((_, i) => (
+                            <div key={i} className="h-2 bg-yellow-400/20 rounded"></div>
+                          ))}
+                        </div>
+                      </div>
+                      {/* Panel 2 */}
+                      <div className="w-20 h-24 bg-gradient-to-b from-gray-700 to-gray-800 rounded border-2 border-yellow-500/30 shadow-lg">
+                        <div className="grid grid-cols-4 gap-1 p-2">
+                          {[...Array(8)].map((_, i) => (
+                            <div key={i} className="h-2 bg-yellow-400/20 rounded"></div>
+                          ))}
+                        </div>
+                      </div>
+                      {/* Panel 3 */}
+                      <div className="w-20 h-24 bg-gradient-to-b from-gray-700 to-gray-800 rounded border-2 border-yellow-500/30 shadow-lg">
+                        <div className="grid grid-cols-4 gap-1 p-2">
+                          {[...Array(8)].map((_, i) => (
+                            <div key={i} className="h-2 bg-yellow-400/20 rounded"></div>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-2">
-                      <div className="absolute w-2 h-2 bg-yellow-500 rounded-full -top-1" style={{left: '92%'}}></div>
-                    </div>
+                    
+                    {/* Energy Flow Lines */}
+                    <svg className="absolute inset-0 w-full h-full opacity-30">
+                      <path d="M 200 80 Q 150 60 100 100" stroke="#eab308" strokeWidth="2" fill="none" strokeDasharray="4,4" />
+                      <path d="M 200 100 Q 150 80 100 120" stroke="#eab308" strokeWidth="2" fill="none" strokeDasharray="4,4" />
+                    </svg>
                   </div>
+                  <p className="text-yellow-400 font-semibold text-lg mb-2">Premium Efficiency</p>
+                  <p className="text-gray-400 text-sm text-center">Industry-leading solar panel technology</p>
                 </div>
               </div>
               
@@ -399,7 +488,7 @@ export default function Home() {
       </section>
 
       {/* Pull Requests Section - Full Page */}
-      <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
+      <section id="pull-requests" className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center w-full">
           {/* Left Side - Visual Card */}
           <div className="relative">
@@ -408,31 +497,67 @@ export default function Home() {
                 Pull Request Management System
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
-                Code quality rating based on our review system (1-300 scale) and verified developer network
+                Professional code review and workflow optimization with our verified developer network
               </p>
               
-              {/* Score Display */}
+              {/* Git Branch Illustration */}
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-blue-500/30 mb-8">
                 <div className="flex flex-col items-center">
-                  <div className="w-32 h-32 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg mb-4">
-                    <span className="text-5xl font-bold text-white">295</span>
-                  </div>
-                  <p className="text-blue-400 font-semibold text-lg mb-4">Code Quality Score</p>
-                  <div className="w-full bg-blue-500/20 rounded-full px-4 py-2 mb-2">
-                    <span className="text-white font-bold text-sm">ENTERPRISE QUALITY</span>
-                  </div>
-                  <div className="w-full relative">
-                    <div className="w-full h-2 bg-gray-700 rounded-full">
-                      <div className="h-2 bg-gradient-to-r from-blue-500 to-blue-400 rounded-full" style={{width: '98%'}}></div>
+                  {/* Git Branch Diagram */}
+                  <div className="relative w-64 h-64 mb-6">
+                    {/* Main Branch */}
+                    <div className="absolute top-8 left-1/2 transform -translate-x-1/2">
+                      <div className="w-32 h-1 bg-blue-500 rounded"></div>
+                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-4 h-4 bg-blue-500 rounded-full border-2 border-blue-400"></div>
                     </div>
-                    <div className="flex justify-between text-xs text-gray-400 mt-1">
-                      <span>1</span>
-                      <span>300</span>
+                    
+                    {/* Feature Branch 1 */}
+                    <div className="absolute top-16 left-1/2 transform -translate-x-1/2">
+                      <div className="w-20 h-1 bg-blue-400/60 rounded transform rotate-45 origin-left"></div>
+                      <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 w-3 h-3 bg-blue-400 rounded-full border border-blue-300"></div>
                     </div>
-                    <div className="absolute top-0 left-0 w-full h-2">
-                      <div className="absolute w-2 h-2 bg-blue-500 rounded-full -top-1" style={{left: '98%'}}></div>
+                    
+                    {/* Feature Branch 2 */}
+                    <div className="absolute top-24 left-1/2 transform translate-x-1/2">
+                      <div className="w-20 h-1 bg-blue-400/60 rounded transform -rotate-45 origin-right"></div>
+                      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 w-3 h-3 bg-blue-400 rounded-full border border-blue-300"></div>
+                    </div>
+                    
+                    {/* Merge Point */}
+                    <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2">
+                      <div className="w-32 h-1 bg-blue-500 rounded"></div>
+                      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-blue-600 rounded-full border-2 border-blue-400 flex items-center justify-center">
+                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                    </div>
+                    
+                    {/* Code Blocks */}
+                    <div className="absolute bottom-4 left-4 w-16 h-12 bg-gray-800 rounded border border-blue-500/30 p-2">
+                      <div className="space-y-1">
+                        <div className="h-1 bg-blue-400/40 rounded w-3/4"></div>
+                        <div className="h-1 bg-blue-400/40 rounded w-full"></div>
+                        <div className="h-1 bg-blue-400/40 rounded w-2/3"></div>
+                      </div>
+                    </div>
+                    <div className="absolute bottom-4 right-4 w-16 h-12 bg-gray-800 rounded border border-blue-500/30 p-2">
+                      <div className="space-y-1">
+                        <div className="h-1 bg-blue-400/40 rounded w-full"></div>
+                        <div className="h-1 bg-blue-400/40 rounded w-3/4"></div>
+                        <div className="h-1 bg-blue-400/40 rounded w-5/6"></div>
+                      </div>
+                    </div>
+                    
+                    {/* Review Checkmark */}
+                    <div className="absolute top-4 right-4 w-12 h-12 bg-blue-500/20 rounded-full border-2 border-blue-400/50 flex items-center justify-center backdrop-blur-sm">
+                      <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                      </svg>
                     </div>
                   </div>
+                  <p className="text-blue-400 font-semibold text-lg mb-2">Enterprise Quality</p>
+                  <p className="text-gray-400 text-sm text-center">Professional code review and merge management</p>
                 </div>
               </div>
               
