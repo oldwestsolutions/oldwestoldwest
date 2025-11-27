@@ -170,17 +170,16 @@ export default function FAQ() {
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Services</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/roofing" className="hover:text-white transition-colors">Roofing</Link></li>
-                <li><Link href="/solar" className="hover:text-white transition-colors">Solar</Link></li>
                 <li><Link href="/pull-requests" className="hover:text-white transition-colors">Pull Requests</Link></li>
+                <li><Link href="/solar" className="hover:text-white transition-colors">Solar</Link></li>
+                <li><Link href="/roofing" className="hover:text-white transition-colors">Roofing</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/" className="hover:text-white transition-colors">Home</Link></li>
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                <li><Link href="/launch" className="hover:text-white transition-colors">Launch</Link></li>
+                <li><Link href="/install" className="hover:text-white transition-colors">Install</Link></li>
               </ul>
             </div>
             <div>
@@ -194,6 +193,11 @@ export default function FAQ() {
           </div>
           <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
             <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+            <p className="mt-2">
+              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link> | 
+              <Link href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</Link> | 
+              <Link href="/cookies" className="hover:text-white transition-colors ml-2">Cookie Policy</Link>
+            </p>
           </div>
         </div>
       </footer>
