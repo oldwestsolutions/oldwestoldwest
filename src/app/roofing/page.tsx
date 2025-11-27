@@ -1,20 +1,10 @@
 import Link from 'next/link';
+import Header from '../components/Header';
 
 export default function Roofing() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white" style={{fontFamily: 'Georgia, serif'}}>
-      {/* Header */}
-      <header className="w-full flex justify-between items-center py-8 px-8 bg-[#1a1a1a]/80 backdrop-blur-md shadow-md sticky top-0 z-50 border-b border-[#333]/50">
-        <div className="flex items-center">
-          <Link href="/" className="text-xl md:text-3xl font-extrabold tracking-tight flex items-center">
-            <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8 mr-3" />
-            OldWestSolutions
-          </Link>
-        </div>
-        <Link href="/login" className="bg-ms-gray-70 text-white px-6 py-2 rounded-full font-semibold hover:bg-ms-gray-80 transition-colors">
-          Login
-        </Link>
-      </header>
+      <Header />
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden pt-32">
@@ -586,7 +576,6 @@ export default function Roofing() {
               <h4 className="text-white text-lg font-bold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
               </ul>
             </div>

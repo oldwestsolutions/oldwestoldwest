@@ -1,21 +1,10 @@
 import Link from 'next/link';
+import Header from './components/Header';
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white" style={{fontFamily: 'Georgia, serif'}}>
-      
-      {/* Header */}
-      <header className="w-full flex justify-between items-center py-8 px-8 bg-[#1a1a1a]/80 backdrop-blur-md shadow-md fixed top-0 z-50 border-b border-[#333]/50 w-full">
-        <div className="flex items-center">
-          <Link href="/" className="text-xl md:text-3xl font-extrabold tracking-tight flex items-center">
-            <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8 mr-3" />
-            OldWestSolutions
-          </Link>
-        </div>
-        <Link href="/login" className="bg-ms-gray-70 text-white px-6 py-2 rounded-full font-semibold hover:bg-ms-gray-80 transition-colors">
-          Login
-        </Link>
-      </header>
+      <Header />
 
       {/* Hero Section - Two Column */}
       <section className="min-h-screen flex flex-col items-center justify-center py-20 px-4 bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] relative overflow-hidden pt-32">
@@ -31,13 +20,13 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight">
-                Professional Services for Your{' '}
                 <span className="text-black" style={{
                   WebkitTextStroke: '2px white',
                   textShadow: '0 0 20px rgba(255,255,255,0.3), 2px 2px 0 white, -2px -2px 0 white, 2px -2px 0 white, -2px 2px 0 white'
                 } as React.CSSProperties}>
                   Home & Code
-                </span>
+                </span>{' '}
+                Professional Services
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 leading-relaxed mb-4">
                 Comprehensive solutions for your property and development needs. From expert roofing installations and solar energy systems to professional pull request management—we deliver excellence across every service.
@@ -368,7 +357,7 @@ export default function Home() {
                 href="/pricing"
                 className="bg-yellow-500 hover:bg-yellow-600 text-white px-8 py-3 rounded-lg font-semibold transition-colors"
               >
-                Get Started
+                Get Quote
               </Link>
               <Link
                 href="/contact"
@@ -699,7 +688,6 @@ export default function Home() {
               <h4 className="text-white text-lg font-bold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
               </ul>
             </div>

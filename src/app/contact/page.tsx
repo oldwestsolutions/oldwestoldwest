@@ -155,9 +155,6 @@ export default function Contact() {
                   <Link href="/pull-requests" className="block text-blue-400 hover:text-blue-300 transition-colors">
                     → Pull Request Services
                   </Link>
-                  <Link href="/faq" className="block text-gray-400 hover:text-white transition-colors">
-                    → FAQ
-                  </Link>
                   <Link href="/pricing" className="block text-gray-400 hover:text-white transition-colors">
                     → Pricing
                   </Link>
@@ -195,7 +192,6 @@ export default function Contact() {
               <h4 className="text-white text-lg font-bold mb-4">Support</h4>
               <ul className="space-y-2 text-sm">
                 <li><Link href="/contact" className="hover:text-white transition-colors">Contact Us</Link></li>
-                <li><Link href="/faq" className="hover:text-white transition-colors">FAQ</Link></li>
                 <li><Link href="/referral" className="hover:text-white transition-colors">Referral Program</Link></li>
               </ul>
             </div>
