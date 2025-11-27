@@ -949,7 +949,6 @@ export default function Home() {
                 <li><Link href="/residential" className="hover:text-white transition-colors">Residential</Link></li>
                 <li><Link href="/remodeling" className="hover:text-white transition-colors">Remodeling</Link></li>
                 <li><Link href="/repository" className="hover:text-white transition-colors">Repository</Link></li>
-                <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
               </ul>
             </div>
             <div>
@@ -958,6 +957,7 @@ export default function Home() {
                 <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
                 <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
                 <li><Link href="/documents" className="hover:text-white transition-colors">Documents</Link></li>
+                <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
               </ul>
             </div>
             <div>
