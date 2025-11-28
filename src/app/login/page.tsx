@@ -96,7 +96,7 @@ export default function Login() {
       {/* Footer */}
       <footer className="w-full bg-[#2a2a2a] text-gray-400 mt-8 border-t border-[#333]">
         <div className="max-w-6xl mx-auto py-8 px-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+          <p>&copy; 2026 OldWestSolutions. All rights reserved.</p>
           <p className="mt-2">
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link> | 
             <Link href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</Link> | 

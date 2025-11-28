@@ -181,7 +181,7 @@ export default function SecureRepositories() {
               <span>|</span>
               <Link href="/cookie" className="hover:text-white transition-colors">Cookie Policy</Link>
             </div>
-            <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+            <p>&copy; 2026 OldWestSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

@@ -124,7 +124,7 @@ export default function ResidentialRoofing() {
             </div>
           </div>
           <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
-            <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+            <p>&copy; 2026 OldWestSolutions. All rights reserved.</p>
           </div>
         </div>
       </footer>

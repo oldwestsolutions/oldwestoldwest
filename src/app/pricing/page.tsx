@@ -613,7 +613,7 @@ export default function Pricing() {
       {/* Minimal Footer */}
       <footer className="w-full bg-[#2a2a2a] text-gray-400 mt-16 border-t border-[#333]">
         <div className="max-w-6xl mx-auto py-8 px-4 text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+          <p>&copy; 2026 OldWestSolutions. All rights reserved.</p>
         </div>
       </footer>
     </div>

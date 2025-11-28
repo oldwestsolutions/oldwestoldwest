@@ -168,7 +168,7 @@ export default function Contact() {
       {/* Footer */}
       <footer className="w-full bg-[#1a1a1a] text-gray-400 py-12 px-4 border-t border-[#333]">
         <div className="max-w-6xl mx-auto text-center text-sm">
-          <p>&copy; {new Date().getFullYear()} OldWestSolutions. All rights reserved.</p>
+          <p>&copy; 2026 OldWestSolutions. All rights reserved.</p>
           <p className="mt-2">
             <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link> | 
             <Link href="/privacy" className="hover:text-white transition-colors ml-2">Privacy Policy</Link> | 
