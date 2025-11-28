@@ -225,6 +225,7 @@ export default function Home() {
                 <div className="w-12 h-12 bg-orange-500/20 rounded-lg flex items-center justify-center mb-4">
                   <svg className="w-6 h-6 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 2v2m0 16v2M4.93 4.93l1.41 1.41m11.32 11.32l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41-1.41m11.32-11.32l-1.41-1.41" />
                   </svg>
                 </div>
                 <p className="text-white font-semibold mb-2">HVAC</p>
