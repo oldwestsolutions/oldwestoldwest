@@ -35,14 +35,16 @@ export default function Header() {
       }`}
     >
       <div className="flex items-center">
-        <Link href="/" className="text-xl md:text-3xl font-extrabold tracking-tight flex items-center">
-          <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8 mr-3" />
-          OldWestSolutions
+        <Link href="/" className="text-base md:text-3xl font-extrabold tracking-tight flex items-center">
+          <img src="/bell.png" alt="OldWestSolutions Logo" className="w-6 h-6 md:w-8 md:h-8 mr-2 md:mr-3" />
+          <span className="hidden sm:inline">OldWestSolutions</span>
+          <span className="sm:hidden">OldWest</span>
         </Link>
       </div>
       <div className="flex items-center gap-2 md:gap-4">
-        <Link href="/contact" className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-3 py-1.5 md:px-6 md:py-2 rounded-full text-sm md:text-base font-semibold transition-colors">
-          Contact Us
+        <Link href="/contact" className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-2 py-1 md:px-6 md:py-2 rounded-full text-xs md:text-base font-semibold transition-colors">
+          <span className="hidden sm:inline">Contact Us</span>
+          <span className="sm:hidden">Contact</span>
         </Link>
         <Link href="/login" className="bg-ms-gray-70 text-white px-3 py-1.5 md:px-6 md:py-2 rounded-full text-sm md:text-base font-semibold hover:bg-ms-gray-80 transition-colors">
           Login

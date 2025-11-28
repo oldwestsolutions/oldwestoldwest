@@ -177,57 +177,6 @@ export default function Network() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="w-full bg-[#1a1a1a] text-gray-400 py-12 px-4 border-t border-[#333]">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <img src="/bell.png" alt="OldWestSolutions Logo" className="w-8 h-8" />
-                <h3 className="text-white text-lg font-bold">OldWestSolutions</h3>
-              </div>
-              <p className="text-sm">Professional services for your home and code.</p>
-            </div>
-            <div>
-              <h4 className="text-white text-lg font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/residential" className="hover:text-white transition-colors">Residential</Link></li>
-                <li><Link href="/remodeling" className="hover:text-white transition-colors">Remodeling</Link></li>
-                <li><Link href="/repository" className="hover:text-white transition-colors">Repository</Link></li>
-                <li><Link href="/network" className="hover:text-white transition-colors">Network</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white text-lg font-bold mb-4">Company</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/pricing" className="hover:text-white transition-colors">Pricing</Link></li>
-                <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
-                <li><Link href="/documents" className="hover:text-white transition-colors">Documents</Link></li>
-                <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
-                <li><Link href="/store" className="hover:text-white transition-colors">Store</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-white text-lg font-bold mb-4">Support</h4>
-              <ul className="space-y-2 text-sm">
-                <li><Link href="/help-desk" className="hover:text-white transition-colors">Help Desk</Link></li>
-                <li><Link href="/careers" className="hover:text-white transition-colors">Careers</Link></li>
-                <li><Link href="/legal" className="hover:text-white transition-colors">Legal</Link></li>
-              </ul>
-            </div>
-          </div>
-          <div className="border-t border-[#333] mt-8 pt-8 text-center text-sm">
-            <div className="flex flex-wrap justify-center gap-4 mb-4">
-              <Link href="/terms" className="hover:text-white transition-colors">Terms of Service</Link>
-              <span>|</span>
-              <Link href="/privacy" className="hover:text-white transition-colors">Privacy Policy</Link>
-              <span>|</span>
-              <Link href="/cookie" className="hover:text-white transition-colors">Cookie Policy</Link>
-            </div>
-            <p>&copy; 2026 OldWestSolutions. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }
