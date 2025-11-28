@@ -398,15 +398,15 @@ export default function LearnMore() {
         </div>
       </section>
 
-      {/* oldwest.net Network Section */}
+      {/* OldWest.net Network Section */}
       <section className="w-full py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16">
             <h2 className="text-5xl md:text-6xl font-bold text-white mb-6 text-center" style={{fontFamily: 'Georgia, serif'}}>
-              oldwest.net Network
+              OldWest.net Network
             </h2>
             <p className="text-xl text-gray-300 text-center max-w-4xl mx-auto leading-relaxed mb-8">
-              Experience revolutionary network solutions through oldwest.net. From gaming and bandwidth sharing to Ethereum VM services and ad sharing capabilities, our distributed network infrastructure enables you to capitalize on your participation while playing sports, games, and engaging in real-life activities.
+              Experience revolutionary network solutions through OldWest.net. From gaming and bandwidth sharing to Ethereum VM services and ad sharing capabilities, our distributed network infrastructure enables you to capitalize on your participation while playing sports, games, and engaging in real-life activities.
             </p>
           </div>
 
@@ -463,7 +463,7 @@ export default function LearnMore() {
             <div className="relative">
               <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-purple-500/20">
                 <h3 className="text-3xl font-bold text-purple-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                  oldwest.net Network
+                  OldWest.net Network
                 </h3>
                 <p className="text-gray-400 mb-8 text-sm">
                   Revolutionary network solutions for gaming, bandwidth sharing, and Ethereum VM services with ad sharing capabilities through our distributed network infrastructure

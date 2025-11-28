@@ -551,10 +551,10 @@ export default function Home() {
           <div className="space-y-8">
             <div>
               <h2 className="text-5xl md:text-6xl font-bold text-white mb-6" style={{fontFamily: 'Georgia, serif'}}>
-                oldwest.net Network
+                OldWest.net Network
               </h2>
               <p className="text-xl text-gray-300 leading-relaxed mb-8">
-                Experience revolutionary network solutions through oldwest.net. From gaming and bandwidth sharing to Ethereum VM services and ad sharing capabilities, our distributed network infrastructure enables you to capitalize on your participation while playing sports, games, and engaging in real-life activities.
+                Experience revolutionary network solutions through OldWest.net. From gaming and bandwidth sharing to Ethereum VM services and ad sharing capabilities, our distributed network infrastructure enables you to capitalize on your participation while playing sports, games, and engaging in real-life activities.
               </p>
             </div>
             
@@ -620,7 +620,7 @@ export default function Home() {
           <div className="relative">
             <div className="bg-[#2a2a2a] rounded-3xl shadow-2xl p-8 border border-purple-500/20">
               <h2 className="text-3xl font-bold text-purple-400 mb-4" style={{fontFamily: 'Georgia, serif'}}>
-                oldwest.net Network
+                OldWest.net Network
               </h2>
               <p className="text-gray-400 mb-8 text-sm">
                 Revolutionary network solutions for gaming, bandwidth sharing, and Ethereum VM services with ad sharing capabilities through our distributed network infrastructure
@@ -997,9 +997,9 @@ export default function Home() {
             <div>
               <h4 className="text-white text-lg font-bold mb-4">Company</h4>
               <ul className="space-y-2 text-sm">
-                <li><Link href="/domains" className="hover:text-white transition-colors">Domain Services</Link></li>
                 <li><Link href="/newspaper" className="hover:text-white transition-colors">Newspaper</Link></li>
                 <li><Link href="/documents" className="hover:text-white transition-colors">Documents</Link></li>
+                <li><Link href="/domains" className="hover:text-white transition-colors">Domains</Link></li>
                 <li><Link href="/store" className="hover:text-white transition-colors">Store</Link></li>
               </ul>
             </div>

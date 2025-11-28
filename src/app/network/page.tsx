@@ -15,7 +15,7 @@ export default function Network() {
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-            <span className="text-purple-400">oldwest.net</span> Network
+            <span className="text-purple-400">OldWest.net</span> Network
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
             Revolutionary network solutions for gaming, bandwidth sharing, and decentralized services. Experience the future of connectivity.
@@ -37,7 +37,7 @@ export default function Network() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Gaming Network</h3>
               <p className="text-gray-400">
-                Ultra-low latency gaming infrastructure powered by oldwest.net. Play your favorite games with minimal lag and maximum performance.
+                Ultra-low latency gaming infrastructure powered by OldWest.net. Play your favorite games with minimal lag and maximum performance.
               </p>
             </div>
 
@@ -49,7 +49,7 @@ export default function Network() {
               </div>
               <h3 className="text-xl font-bold text-white mb-4">Bandwidth Sharing</h3>
               <p className="text-gray-400">
-                Share and monetize your bandwidth through oldwest.net. Earn rewards while contributing to a distributed network infrastructure.
+                Share and monetize your bandwidth through OldWest.net. Earn rewards while contributing to a distributed network infrastructure.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ export default function Network() {
           <div className="bg-[#2a2a2a] rounded-2xl p-12 border border-purple-500/20 mb-8">
             <h3 className="text-3xl font-bold text-white mb-6 text-center">Ad Sharing Services</h3>
             <p className="text-gray-300 text-center mb-8 text-lg">
-              Capitalize on ad sharing services through <span className="text-purple-400 font-bold">oldwest.net</span>. Monetize your content and network participation while maintaining control over your data.
+              Capitalize on ad sharing services through <span className="text-purple-400 font-bold">OldWest.net</span>. Monetize your content and network participation while maintaining control over your data.
             </p>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -79,7 +79,7 @@ export default function Network() {
                     <svg className="w-6 h-6 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Join the oldwest.net network and start sharing bandwidth</span>
+                    <span>Join the OldWest.net network and start sharing bandwidth</span>
                   </li>
                   <li className="flex items-start gap-3">
                     <svg className="w-6 h-6 text-purple-400 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -124,7 +124,7 @@ export default function Network() {
           <div className="bg-[#2a2a2a] rounded-2xl p-12 border border-purple-500/20">
             <h3 className="text-3xl font-bold text-white mb-6 text-center">Sports, Games & Real Life</h3>
             <p className="text-gray-300 text-center mb-8 text-lg">
-              Experience sports, games, and real-life activities through our comprehensive network solutions on <span className="text-purple-400 font-bold">oldwest.net</span>.
+              Experience sports, games, and real-life activities through our comprehensive network solutions on <span className="text-purple-400 font-bold">OldWest.net</span>.
             </p>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
@@ -162,7 +162,7 @@ export default function Network() {
       {/* CTA Section */}
       <section className="py-20 px-4 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">Join the <span className="text-purple-400">oldwest.net</span> Network</h2>
+          <h2 className="text-4xl font-bold text-white mb-6">Join the <span className="text-purple-400">OldWest.net</span> Network</h2>
           <p className="text-xl text-gray-300 mb-8">
             Start capitalizing on ad sharing services and experience the future of network connectivity.
           </p>
