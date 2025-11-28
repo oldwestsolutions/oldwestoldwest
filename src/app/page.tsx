@@ -261,7 +261,7 @@ export default function Home() {
                 Get Quote
               </button>
               <Link
-                href="/learn-more"
+                href="/residentialinformation"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
@@ -335,7 +335,7 @@ export default function Home() {
                 Get Quote
               </button>
               <Link
-                href="/learn-more"
+                href="/residentialinformation"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
@@ -533,7 +533,7 @@ export default function Home() {
                 Get Started
               </button>
               <Link
-                href="/learn-more"
+                href="/residentialinformation"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
@@ -607,7 +607,7 @@ export default function Home() {
                 Get Started
               </button>
               <Link
-                href="/network"
+                href="/networkinformation"
                 className="bg-transparent border-2 border-white/20 text-white hover:border-white/40 px-8 py-3 rounded-lg font-semibold transition-colors"
               >
                 Learn More
