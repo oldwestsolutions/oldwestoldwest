@@ -151,7 +151,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-orange-500/30 mb-8">
                 <div className="flex flex-col items-center">
                   <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
-                    <img src="/house.jpg" alt="Maximum Protection" className="w-full h-full object-contain scale-75" />
+                    <img src="/house.jpg" alt="Maximum Protection" className="w-full h-full object-contain scale-90" />
                   </div>
                   <p className="text-orange-400 font-semibold text-lg mb-2">Maximum Protection</p>
                   <p className="text-gray-400 text-sm text-center">Weather-resistant materials and expert craftsmanship</p>
@@ -359,7 +359,7 @@ export default function Home() {
               <div className="bg-gradient-to-br from-[#1a1a1a] to-[#2a2a2a] rounded-2xl p-8 border border-yellow-500/30 mb-8">
                 <div className="flex flex-col items-center">
                   <div className="relative w-full h-64 mb-6 rounded-lg overflow-hidden bg-[#1a1a1a] flex items-center justify-center">
-                    <img src="/roomremodel.jpg" alt="Expert Craftsmanship" className="w-full h-full object-contain scale-75" />
+                    <img src="/roomremodel.jpg" alt="Expert Craftsmanship" className="w-full h-full object-contain scale-90" />
                   </div>
                   <p className="text-yellow-400 font-semibold text-lg mb-2">Expert Craftsmanship</p>
                   <p className="text-gray-400 text-sm text-center">Professional remodeling and renovation services</p>
